@@ -12,13 +12,16 @@
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
   margin: 0;
+  /* overflow: hidden; /* Hide scrollbars */ */
+
 }
 
 /* Header/logo Title */
 .header {
   padding: 80px;
-
+  /* height: 40%; */
   text-align: center;
   background: url('https://mhyatt000.github.io/heatbar.png');
   background-size: cover;
@@ -27,7 +30,7 @@ body {
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 /* Style the top navigation bar */
@@ -38,9 +41,10 @@ body {
 
 /* Style the navigation bar links */
 .navbar a {
+font-size:15px;
   float: left;
   display: block;
-  color: #130a34;
+  color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -53,7 +57,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background: #130a34;
+  background: white;
   color: black;
 }
 
@@ -63,6 +67,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+  background-color: black;
+  color: white;
+
+  padding: 20px;
+
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -70,7 +79,10 @@ body {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #130a34;
+  background-color: black;
+  border:1px solid white;
+  color: white;
+
   padding: 20px;
 }
 
@@ -78,13 +90,17 @@ body {
 .main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: #fbaa0e;
+  background-color: black;
   padding: 20px;
+  border:1px solid white;
+  color: white;
+
 }
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #aaa;
+  background-color: white;
+  color: black;
   width: 100%;
   padding: 20px;
 }
@@ -93,7 +109,8 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #130a34;
+  color: white;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -110,9 +127,19 @@ body {
     width: 100%;
   }
 }
+
+
 </style>
 </head>
 <body>
+
+    <div class="navbar">
+        <a href="https://mhyatt000.github.io/">MATT HYATT</a>
+      <a href="#">ABOUT</a>
+      <a href="#">RESUME</a>
+      <a href="https://mhyatt000.github.io/other.html" class="right">OTHER</a>
+    </div>
+
 
 <div class="header">
   <h1>Matthew Hyatt</h1>
@@ -120,15 +147,9 @@ body {
   <p>BS CS 2024</p>
 </div>
 
-<div class="navbar">
-    <a href="https://mhyatt000.github.io/">Matt Hyatt</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="https://mhyatt000.github.io/other.html" class="right">other.html</a>
-</div>
 
 <div class="row">
-  <div class="side">
+  <div>
     <h2>About Me</h2>
     <h5>Photo of me:</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
@@ -138,8 +159,7 @@ body {
     <div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
+
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 31, 2021</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
@@ -157,7 +177,7 @@ body {
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <p>CONTACT</p>
 
 <ul>
     <li>
