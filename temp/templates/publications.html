@@ -5,6 +5,7 @@
 
         {% for p in pub %}
 
+            <div class='pad'>
             <article class="media content-section">
               <div class="media-body">
                 <div class="article-metadata">
@@ -13,7 +14,7 @@
                 <h2>{{ p.title }}</h2>
                 <p class="article-content"><a href={{p.url}}>{{ p.url }}<a/></p>
               </div>
-            </article>
+            </article></div>
 
         {% endfor %}
 
