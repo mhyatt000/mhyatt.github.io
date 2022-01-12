@@ -22,22 +22,22 @@ about = {'t': 'aaa', 'a': 'e'}
 
 
 @app.route("/")
-@app.route("/home")
+@app.route("/home/")
 def home():
     return render_template("home.html")
 
 
-@app.route("/about")
+@app.route("/about/")
 def about():
     return render_template("about.html", posts=posts, title="About")
 
 
-@app.route("/cv")
+@app.route("/cv/")
 def cv():
     return render_template("cv.html", about=about, title="CV")
 
 
-@app.route("/publications")
+@app.route("/publications/")
 def publications():
     return render_template("publications.html", pub=pub, title="Publications")
 
