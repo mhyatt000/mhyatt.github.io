@@ -1,8 +1,0 @@
-flask
-flask-sqlalchemy
-flask-login
-flask-bcrypt
-flask-wtf
-mysql-connector-python
-mysqlclient
-flask-mysqldb
