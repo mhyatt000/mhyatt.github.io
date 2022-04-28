@@ -1,2 +1,1 @@
-# comp324
-website
+# mhyatt000.github.io
