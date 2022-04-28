@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Matt Hyatt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Stock Analysis Website">
+        <meta name="author" content="Matt Hyatt, Anthony Peters">
+
+
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- your stylesheet last -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <script defer src="js/template.js" onload="main()"></script>
+        <script defer src="js/ajax.js" onload=""></script>
+
+        <script type="text/javascript" src="js/ticker.js"></script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <nav></nav>
+
+            <main>
+                <div class='desc'></div>
+
+                <div class="content-center">
+
+                    <div class="col">
+
+                        <h1> Coursework </h1>
+                        <h3> This is software I created for classes at Loyola University Chicago </h3>
+
+                        <div class="double" style="width: 100%;">
+
+                            <a href="https://github.com/mhyatt000/comp329/tree/main/project1">
+                                <div class="project even">
+                                    <span>
+                                        <h2> ViT-GPT2</h2>
+                                        <h3> COMP 329 - Natural Language Processing </h3>
+                                    </span>
+                                    <ul>
+                                        <li class="bullet"> Implements ViT Encoder and GPT2 Decoder </li>
+                                        <li class="bullet"> Produces AI captioned images </li>
+                                        <li class="bullet"> Pretrained model downloaded from HuggingFace.co </li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/mhyatt000/comp487/tree/main/project1">
+                                <div class="project even">
+                                    <span>
+                                        <h2> Modern CNN</h2>
+                                        <h3> COMP 487 - Topics: Deep Learning </h3>
+                                    </span>
+                                    <ul>
+                                        <li class="bullet"> Implements modern CNN image classifiers from scratch in PyTorch </li>
+                                        <li class="bullet"> Compares accuracy and training time on MNIST dataset </li>
+                                        <li class="bullet"> VGG, GoogLeNet, ResNet, DenseNet, SeNet </li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/mhyatt000/comp379/">
+                                <div class="project even">
+                                    <span>
+                                        <h2> Machine Learning Algorithms </h2>
+                                        <h3> COMP 379 - Machine Learning </h3>
+                                    </span>
+                                    <ul>
+                                        <li class="bullet"> Builds Perceptron from scratch </li>
+                                        <li class="bullet"> Implements K Nearest Neighbors algorithm from scratch </li>
+                                        <li class="bullet"> Implements K Fold Cross Validation algorithm from scratch </li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/mhyatt000/comp272/tree/main/final">
+                                <div class="project even">
+                                    <span>
+                                        <h2> DAG Generator</h2>
+                                        <h3> COMP 272  - Data Structures II </h3>
+                                    </span>
+                                    <ul>
+                                        <li class="bullet"> Builds Directed Acyclic Graph to show Strongly Connected Components </li>
+                                        <li class="bullet"> Determines smallest subnetwork necessary to reach all airports </li>
+                                        <li class="bullet"> Built in Java </li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <h1> Loyola AI Club (LAIC) </h1>
+                        <h3> LAiC was founded in 2022 and aims to provide Loyola students with the resources required to learn
+                            and build connections within the field of AI. Our events this year include hosting workshops and speakers
+                            to talk about industry experience as well as data science competitions.
+                            I am a board member at LAiC.  I work in a group to:
+                            <ul>
+                                <li class="bullet"> schedule speaker events </li>
+                                <li class="bullet"> design workshops that interest our members and facilitate their learning </li>
+                                <li class="bullet"> market our club to the Loyola community </li>
+                            </ul>
+
+                        </h3>
+
+                        <div class="double" style="width: 100%;">
+
+                            <a href="https://github.com/mhyatt000/hm">
+                                <div class="project even">
+                                    <h2> Kaggle Competition : H&M </h2>
+                                    <ul>
+                                        <li class="bullet"> an LSTM network built to predict the next purchase of an H&M customer.</li>
+                                        <li class="bullet"> built with PyTorch</li>
+                                        <!-- <li class="bullet"> </li> -->
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                            <!-- <a href="https://github.com/mhyatt000/hm"> -->
+                                <div class="project even">
+                                    <h2> LAIC website </h2>
+                                    <ul>
+                                        <li class="bullet"> a website to market our club the the student body </li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            <!-- </a> -->
+
+                        </div>
+
+                        <h1> Rambler Investment Fund (RIF) </h1>
+                        <h3> RIF is a student managed portfolio valued at over 1 million dollars. RIF provides students
+                            with opportunities to build skills in financial analysis and risk assessment as well as to
+                            network with industry professionals. Until March 2022, I was a developer on RIF’s quantitative
+                            analytics team and wrote software to automate and visualize stock analysis.
+                        </h3>
+
+                        <div class="double" style="width: 100%;">
+
+                            <a href="https://github.com/mhyatt000/tickerbot">
+                                <div class="project even">
+                                    <h2> Tickerbot </h2>
+                                    <ul>
+                                        <li class="bullet"> a slackbot designed to react to messages in Slack and
+                                            return a pdf stock report upon request.</li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/RamblerInvestmentFund/MachineLearningProj">
+                                <div class="project even">
+                                    <h2> MachineLearningProj </h2>
+                                    <ul>
+                                        <li class="bullet"> implements SVM and LSTM models using scikit-learn and
+                                            TensorFlow 2.0 in attempt to predict the daily gradient of opening stock
+                                            values and make trading decisions based on its predictions </li>
+                                    </ul>
+                                    <i class="fa-brands fa-3x fa-github"></i>
+                                </div>
+                            </a>
+
+                        </div> <!-- double -->
+
+
+                    </div> <!-- content-center -->
+                </div>
+
+            </main>
+
+        </div>
+    </body>
+</html>

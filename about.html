@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Matt Hyatt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Stock Analysis Website">
+        <meta name="author" content="Matt Hyatt, Anthony Peters">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script> -->
+        <!-- Load the element definition -->
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+
+
+        <script defer src="js/template.js" onload="main()"></script>
+        <script defer src="js/ajax.js" onload=""></script>
+
+        <script type="text/javascript" src="js/ticker.js"></script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <nav></nav>
+
+            <main>
+                <div class='desc'></div>
+
+                <div class="content-center">
+                    <div class="col>">
+
+                        <p>
+                            I am a Computer Science major at <a href="https://www.luc.edu/cs/index.shtml">Loyola University Chicago</a>. Some of my hobbies include hiphop dance, weight lifting, and construction projects.  I have close ties to my extended family and it is a long standing tradition for us to have Sunday night dinner together.
+                            I first became interested in computer science during my high school classes. I have always been fascinated by the idea of efficiency, and using tools in order to complete goals in innovative ways.  My passion for CS truly started when I learned  of neural networks. I was hooked on the idea of teaching computers to learn things that humans have failed to learn, and the prospect that we will be learning from them along the way.
+                            One of my favorite podcasts by Lex Friedman explores some of the philosophic questions behind AI including theories behind human intelligence and human computer relationships.
+                            I am committed to ensuring that changes as a result of AI are positive for humanity.  Upon graduation from Loyola, I hope to pursue an MS in AI and continue my work as a computer science researcher.
+                        </p>
+
+                        <h3>2020</h3>
+                        <p>
+                            I began my Bachelors of Science studies at Loyola University Chicago (2020-2024).
+                            In the fall of 2020, I was selected for the FYRE scholarship program where I was among 10 students mentored by <a href="https://gkt.cs.luc.edu/">Dr. Thiruvathukal</a> and two other professors. We were taught the importance of proper research methods. Later, we developed our own research questions and presented our findings to a faculty panel.
+
+                        <h3>2021</h3>
+                        <p>
+                            I began working for Dr. Thiruvathukal on a collaborative project with Purdue University funded by <a href="https://www.google.com/">Google</a>. Our research focused on an analysis of TensorFlow Model Garden repositories. My work involved documenting GitHub issues in order to determine which part of the DL development process bugs occurred in.  We analyzed our results and drew conclusions based on basic statistics to pinpoint why certain areas of development were prone to errors and what changes could be made in order to reduce the amount of errors as a whole.
+                            I found that many of the bugs that arose from DL implementation were a result of poor reading of the software engineer implementing the DL library. Furthermore, many of the bugs failed to get solved as a result of poor documentation on the part of the implementing engineer.  Library developers lacked the context needed to solve implementation problems.  My proposed solution suggested a standardized bug documentation process as a prerequisite for raising a GitHub issue in DL libraries.
+                            Last semester, I continued working in Loyola's <a href="https://ssl.cs.luc.edu/">Software Systems Laboratory</a>, where we have been developing free, open source tools for developers to analyze and visualize software metrics.  The tools we completed last semester measure a project’s productivity, bus factor, and defect density.
+                        </p>
+
+                        <h3>2022</h3>
+                        <p>
+                            I am currently planning to develop more software tools in the Software Systems Laboratory. We plan to use natural language processing (NLP) techniques, to classify code bugs described in GitHub issues of major software libraries like NumPy and TensorFlow. I expect this research to reinforce my skills in NLP and meta-research and allow me to put knowledge from the classroom into practice in the real world.
+                            I recently accepted an REU position at Purdue University.  My work will include research and software engineering of ML libraries like TensorFlow and PyTorch and will be funded by a <a href="https://www.nsf.gov/">National Science Foundation (NSF)</a> grant awarded to <a href="https://davisjam.github.io/">Dr. Jamie Davis</a>. More information soon!
+                        </p>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+     </body>
+</html>
