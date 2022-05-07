@@ -255,7 +255,7 @@ main{
     grid-template-rows:  60px 1.5fr;
 
     grid-template-areas:
-        "desc desc"
+        ". ."
         "content-left content-right";
 
     grid-gap:0.2rem;
@@ -280,8 +280,4 @@ nav {
     letter-spacing: 3px;
     font-size: 12px;
     padding: 12px 8px;
-}
-
-.desc{
-    grid-area: desc;
 }
