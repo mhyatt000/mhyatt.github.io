@@ -34,7 +34,7 @@ function build_navbar(){
             <li>${make_red('<a href="cv.html">CV</a>')}</li>
             <li>${make_red('<a href="publications.html">Publications</a>')}</li>
             <li>${make_red('<a href="projects.html">Projects</a>')}</li>
-            <li>${make_red('<a href="readinglist.html">Reading List</a>')}</li>
+            <!-- <li>${make_red('<a href="readinglist.html">Reading List</a>')}</li> -->
         </ul>
         </div>
 
