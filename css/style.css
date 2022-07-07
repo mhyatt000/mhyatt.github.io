@@ -265,6 +265,7 @@ nav {
 
 }
 
+.highlight {}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
@@ -293,6 +294,10 @@ nav {
         grid-gap : 10px;
         grid-auto-flow: dense;
         grid-template-columns: 1fr;
+    }
+
+    p {
+        font-size : 10px;
     }
 
 }
