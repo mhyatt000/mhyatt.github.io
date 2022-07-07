@@ -274,6 +274,7 @@ nav {
 
 .mobile { display:none; }
 .unmobile { display:initial; }
+.noscroll { overflow-x: hidden; }
 
 /* mobile */
 @media only screen and (max-width: 768px) {
