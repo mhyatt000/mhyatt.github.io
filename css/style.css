@@ -47,9 +47,8 @@ body {
     font-family : "Nunito", sans-serif;
 }
 
-div {
-    padding : 5px 5px;
-}
+div { padding : 5px 5px; }
+span { text-align : center; }
 
 .flex {
     display: flex;
@@ -232,6 +231,7 @@ embed {
 }
 
 main{
+    padding : 0 5px 0 5px; margin : 0 5px 0 5px;
     display: grid;
     grid-area: main;
     grid-template-columns:  1fr 1fr ;
@@ -265,7 +265,10 @@ nav {
 
 }
 
-.highlight {}
+.highlight:hover {
+    background: var(--grey1);
+    border-radius : 5px;
+}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
@@ -275,7 +278,7 @@ nav {
         grid-template-rows : 1fr 2fr;
         grid-template-columns : 1fr ;
     }
-    .nav-links li {
+    li {
         font-size : 10px;
     }
 
@@ -296,9 +299,8 @@ nav {
         grid-template-columns: 1fr;
     }
 
-    p {
-        font-size : 10px;
-    }
+    p { font-size : 10px; }
+    h2 { font-size : 15px; }
 
 }
 
