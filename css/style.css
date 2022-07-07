@@ -37,7 +37,7 @@
 
 html, body {
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -249,11 +249,15 @@ nav {
     background: var(--color-accent1);
     color : var(--color-main);
 
+    /* cant stick cuz its in the grid but you could overlay and fix */
+    position: sticky;
+    top: 0px;
+
     grid-area: nav;
 
     display: flex;
 
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 
     min-height: 8vh;
@@ -271,7 +275,7 @@ nav {
         grid-template-columns : 1fr ;
     }
     .nav-links li {
-
+        font-size : 10px;
     }
 
     .container {

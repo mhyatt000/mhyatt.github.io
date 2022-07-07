@@ -28,7 +28,7 @@ function build_navbar(){
         <div><h2>
             <a href="index.html"> Matthew Hyatt </a>
         </h2></div>
-        <div><ul class="nav-links row">
+        <div><ul class="nav-links row center">
             <li>${make_red('<a href="about.html">About</a>')}</li>
             <li>${make_red('<a href="cv.html">CV</a>')}</li>
             <li>${make_red('<a href="publications.html">Publications</a>')}</li>
