@@ -26,7 +26,7 @@ function build_navbar(){
 
     template.innerHTML = `
         <div><h2>
-            <a href="index.html"> Matthew Hyatt </a>
+            <a href="/"> Matthew Hyatt </a>
         </h2></div>
         <div><ul class="nav-links row center">
             <li>${make_red('<a href="about.html">About</a>')}</li>
