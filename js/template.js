@@ -25,22 +25,15 @@ function build_navbar(){
     const template = document.createElement("template")
 
     template.innerHTML = `
-        <div class='row'>
-            <h2>
-                <a href="index.html"> Matthew Hyatt </a>
-            </h2>
-        <ul class="nav-links row">
+        <div><h2>
+            <a href="index.html"> Matthew Hyatt </a>
+        </h2></div>
+        <div><ul class="nav-links row">
             <li>${make_red('<a href="about.html">About</a>')}</li>
             <li>${make_red('<a href="cv.html">CV</a>')}</li>
             <li>${make_red('<a href="publications.html">Publications</a>')}</li>
             <li>${make_red('<a href="projects.html">Projects</a>')}</li>
-        </ul>
-        </div>
-
-        <!-- <ul class="nav-links">
-            <li><input type="text" id="username" value="username" onKeyDown="submit()"></li>
-            <li><input type="text" id="password" value="password" onKeyDown="submit()"></li>
-        </ul> -->
+        </ul></div>
     `
 
     //             <li>${make_red('<a href="readinglist.html">Reading List</a>')}</li>
