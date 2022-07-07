@@ -189,8 +189,10 @@ nav li a{
 }
 
 
-p a , h1 a{
+p a , h1 a {
     color : var(--color-accent2);
+}
+p a:hover , h1 a:hover {
     text-decoration: underline;
 }
 
