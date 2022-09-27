@@ -6,8 +6,9 @@ from pprint import pprint
 tr = "<tr>"
 BR = lambda: "<br>"
 
-a = lambda href, text: f'<a href="{href}"> {text} </a>' if href not in ['None',None] else text
-p = lambda text: f"<p> {text} </p>"
+nonone = lambda x: x in ['None',None]
+a = lambda href, text: f'<a href="{href}"> {text} </a>' if nonone(href) else text
+p = lambda text: f"<p> {text} </p>" if nonone(text) else ""
 
 
 def item(title=None, authors=None, venue=None, links=None, desc=None, name=None, project=None, arxiv=None, media=None):
