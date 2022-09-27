@@ -31,8 +31,8 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     authors = "\n".join([a(**i) for i in authors])
     venue = f"<em>{venue[0]}</em>, {venue[1]}"
 
-    project = a(**{"href": "/", "text": "project page"})
-    arxiv = a(**{"href": "/", "text": "arxiv"})
+    project = a(**{"href": project, "text": "project page"})
+    arxiv = a(**{"href": arxiv, "text": "arxiv"})
 
     desc = p(desc)
 
