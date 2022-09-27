@@ -1,25 +1,59 @@
-- title: PRIME
-  authors: 
-  - text: Matt Hyatt
-    href: '/'
-  - text: Nicholas Synovic
-    href: '/'
-  venue: 
-  - ACM
-  - 2022
-  project: None
-  arxiv: coming soon
-  desc: This is a tool to calculate longitudinal metrics
-  media: None
-- title: Are PTMs good
+- title: "An Empirical Study of Artifacts and Security Risks in the Pretrained Model Supply Chain"
   authors:
-    - text: Wenxin Jiang
-      href: '/'
-    - text: Nicholas Synovic
-      href: '/'
-    - text: Matt Hyatt
-      href: '/'
+  - text: Wenxin Jiang
+    href:
+  - text: Nicholas Synovic
+    href:
+  - text: Rohan Sethi
+    href:
+  - text: Aryan Indarapu
+    href:
+  - text: Matt Hyatt
+    href:
+  - text: Taylor R. Schorlemmer
+    href:
+  - text: George K.  Thiruvathukal
+    href:
+  - text: James C. Davis
+    href:
   venue: 
-    - SCORED
+    - ACM SCORED
     - 2022
   media: None
+- title: "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics"
+  authors: 
+  - text: Nicholas Synovic
+    href:
+  - text:  Matt Hyatt
+    href:
+  - text:  Rohan Sethi
+    href:
+  - text:  Sohini Thota
+    href:
+  - text:  Shilpika
+    href:
+  - text:  Allan J. Miller
+    href:
+  - text:  Wenxin Jiang
+    href:
+  - text:  Emmanuel S. Amobi
+    href:
+  - text:  Austin Pinderski
+    href:
+  - text:  Konstantin Läufer
+    href:
+  - text:  Nicholas J. Hayward
+    href:
+  - text:  Neil Klingensmith
+    href:
+  - text:  James C. Davis
+    href:
+  - text:  George K. Thiruvathukal
+    href:
+  venue: 
+  - ASE Tools Demo
+  - 2022
+  project: 
+  arxiv: 
+  desc: 
+  media: 
