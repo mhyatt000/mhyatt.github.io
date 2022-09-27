@@ -6,7 +6,7 @@ from pprint import pprint
 tr = "<tr>"
 BR = lambda: "<br>"
 
-a = lambda href, text: f'<a href="{href}"> {text} </a>' if href not in ['None',None] else f'<a>{text}</a>'
+a = lambda href, text: f'<a href="{href}"> {text} </a>' if href not in ['None',None] else text
 p = lambda text: f"<p> {text} </p>"
 
 
