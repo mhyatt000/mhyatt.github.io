@@ -95,26 +95,16 @@ def build():
     """docstring"""
 
     with open('pub.yaml','r') as file:
-        data = yaml.load(file)
+        data = yaml.safe_load(file)
 
-    pprint(data[0])
+    # pprint(data[0])
 
     site = [item(**d) for d in data]
     
     with open('build.html','w') as file:
         file.write('\n'.join(site))
 
+    print('done')
+
 
 build()
-
-"""
-<tr onmouseout="malle_stop()" onmouseover="malle_start()">
-
-    demo
-        script
-    demo
-    
-    textbox
-
-</tr>
-"""
