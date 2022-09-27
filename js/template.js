@@ -29,14 +29,14 @@ function build_navbar(){
             <a href="/"> Matthew Hyatt </a>
         </h2></div>
         <div><ul class="nav-links row center">
-            <li>${make_red('<a href="cv.html">CV</a>')}</li>
-            <li>${make_red('<a href="publications.html">Publications</a>')}</li>
+            <li>${make_red('<a href="docs/matthewhyatt-cv.pdf">CV</a>')}</li>
         </ul></div>
     `
 
     // <li>${make_red('<a href="readinglist.html">Reading List</a>')}</li>
     // <li>${make_red('<a href="about.html">About</a>')}</li>
     // <li>${make_red('<a href="projects.html">Projects</a>')}</li>
+    // <li>${make_red('<a href="publications.html">Publications</a>')}</li>
 
     navbar.appendChild(template.content)
 
