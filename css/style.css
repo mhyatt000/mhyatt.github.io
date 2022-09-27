@@ -169,14 +169,15 @@ p {
 
 
 a {
-    color: var(--color-plain);
+    color: var(--color-accent2);
+    font-weight: bold;
     text-decoration: none;
     height : 100%; width : 100%;
 }
 
-/* a:hover {
-    color: var(--color-accent2);
-} */
+td a:hover {
+    text-decoration: underline;
+} 
 
 nav a {
     color: var(--color-main);
