@@ -48,26 +48,18 @@ function build_socials() {
     const template = document.createElement("template")
 
     template.innerHTML = `
-            <li>
-                <a href="https://github.com/mhyatt000/" aria-label="Github">
-                <i class="fa-brands fa-3x fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/matt-hyatt-7bb18422a/" aria-label="LinkedIn">
-                <i class="fa-brands fa-3x fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://orcid.org/0000-0002-6356-6832" aria-label="OrcId">
-                <i class="fa-brands fa-3x fa-orcid"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:mhyatt@luc.edu" aria-label="Email">
-                <i class="fa-solid fa-3x fa-envelope"></i>
-                </a>
-            </li>
+        <a href="https://github.com/mhyatt000/" aria-label="Github">
+        <i class="fa-brands fa-3x fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/matt-hyatt-7bb18422a/" aria-label="LinkedIn">
+        <i class="fa-brands fa-3x fa-linkedin"></i>
+        </a>
+        <a href="https://orcid.org/0000-0002-6356-6832" aria-label="OrcId">
+        <i class="fa-brands fa-3x fa-orcid"></i>
+        </a>
+        <a href="mailto:mhyatt@luc.edu" aria-label="Email">
+        <i class="fa-solid fa-3x fa-envelope"></i>
+        </a>
     `
 
     intro.appendChild(template.content)

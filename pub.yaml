@@ -1,0 +1,25 @@
+- title: PRIME
+  authors: 
+  - text: Matt Hyatt
+    href: '/'
+  - text: Nicholas Synovic
+    href: '/'
+  venue: 
+  - ACM
+  - 2022
+  project: None
+  arxiv: coming soon
+  desc: This is a tool to calculate longitudinal metrics
+  media: None
+- title: Are PTMs good
+  authors:
+    - text: Wenxin Jiang
+      href: '/'
+    - text: Nicholas Synovic
+      href: '/'
+    - text: Matt Hyatt
+      href: '/'
+  venue: 
+    - SCORED
+    - 2022
+  media: None

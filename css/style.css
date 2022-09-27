@@ -87,6 +87,7 @@ span { text-align : center; }
 }
 
 #avatar {
+    margin: 80px 20px 0px 20px;
     border-radius: 50%;
     width: 200px;
 }
@@ -94,8 +95,7 @@ span { text-align : center; }
 #intro {
     align-self: center;
 
-    display: grid;
-    grid-template-rows : auto;
+    display: grid; grid-template-rows : auto;
 
     justify-content : center;
     justify-items : center;
@@ -211,6 +211,32 @@ embed {
     align-self: stretch;
 }
 
+
+
+.textcenter {
+    text-align : center;
+}
+
+table {
+    width:100%;
+    max-width:800px;
+    border:0px;
+    border-spacing:0px;
+    border-collapse:separate;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+tr, td { padding:0px; }
+
+td {
+    padding:20px;
+    width:100%;
+    vertical-align:middle;
+}
+
+td#full{ width:100%; }
+td#demo { width:25%; }
 
 /* approved ^^^ */
 
