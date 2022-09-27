@@ -7,9 +7,9 @@ function get_page() {
     const page = get_URL()
     return String(page).split('.')[0]
 }
-function make_red(anchor) {
+function highlight(anchor) {
 
-    // if you are on the current page then highlight its link in red
+    // if you are on the current page then highlight its link 
     const page = get_page()
     const re = RegExp('>.*<')
     const linktext = String(anchor).match(re)[0].slice(1,-1).replaceAll(" ","").toLowerCase()
@@ -29,14 +29,14 @@ function build_navbar(){
             <a href="/"> Matthew Hyatt </a>
         </h2></div>
         <div><ul class="nav-links row center">
-            <li>${make_red('<a href="docs/matthewhyatt-cv.pdf">CV</a>')}</li>
+            <li>${highlight('<a href="docs/matthewhyatt-cv.pdf">CV</a>')}</li>
         </ul></div>
     `
 
-    // <li>${make_red('<a href="readinglist.html">Reading List</a>')}</li>
-    // <li>${make_red('<a href="about.html">About</a>')}</li>
-    // <li>${make_red('<a href="projects.html">Projects</a>')}</li>
-    // <li>${make_red('<a href="publications.html">Publications</a>')}</li>
+    // <li>${highlight('<a href="readinglist.html">Reading List</a>')}</li>
+    // <li>${highlight('<a href="about.html">About</a>')}</li>
+    // <li>${highlight('<a href="projects.html">Projects</a>')}</li>
+    // <li>${highlight('<a href="publications.html">Publications</a>')}</li>
 
     navbar.appendChild(template.content)
 
