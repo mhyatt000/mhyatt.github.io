@@ -60,9 +60,9 @@ def demo(media):
     b = '<div class="one">'
     c = f'<div class="two" id="{media}">'
     d = f'<img src="img/{media}_after.jpg" ></div>'
-    e = f'<img src="img/{media}_before.jpg" >'
-    f = "</div>"
-    h = f
+    e = "</div>"
+    f = f'<img src="img/{media}_before.jpg" >'
+    h = e
     g = '</td>'
 
     return "\n".join([a, b, c, d, e, f, h,g])
