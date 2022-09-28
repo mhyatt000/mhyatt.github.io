@@ -9,7 +9,7 @@ BR = lambda: "<br>"
 nonone = lambda x: not x in ["None", None]
 a = lambda href, text: f'<a href="{href}"> {text} </a>' if nonone(href) else text
 p = lambda text: f"<p> {text} </p>" if nonone(text) else ""
-em = lambda text: f"<em>{text}</em>
+em = lambda text: f"<em>{text}</em>"
 
 def item(
     title=None,
