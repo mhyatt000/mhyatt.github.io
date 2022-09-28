@@ -14,11 +14,12 @@ p = lambda text: f"<p> {text} </p>" if nonone(text) else ""
 def item(title=None, authors=None, venue=None, links=None, desc=None, name=None, project=None, arxiv=None, media=None):
     """builds an html research item"""
 
+    g = script(media)
     tr = [f'<tr onmouseout="{media}_stop()" onmouseover="{media}_start()">', "</tr>"]
     left = demo(media)
     right = textbox(venue=venue, authors=authors, title=title, project=project, arxiv=arxiv, desc=desc)
 
-    return "\n".join([tr[0], left, right, tr[1]])
+    return "\n".join([g,tr[0], left, right, tr[1]])
 
 
 def textbox(*, venue, authors, title, project, arxiv, desc):
@@ -61,10 +62,9 @@ def demo(media):
     d = f'<img src="img/{media}_after.jpg" ></div>'
     e = f'<img src="img/{media}_before.jpg" >'
     f = "</div>"
-    g = script(media)
     h = f
 
-    return "\n".join([a, b, c, d, e, f, g, h])
+    return "\n".join([a, b, c, d, e, f, h])
 
 
 def script(elem):
