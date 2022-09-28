@@ -19,7 +19,7 @@
   venue: 
     - ACM SCORED
     - 2022
-  media: 
+  media: scored
 - title: "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics"
   authors: 
   - text: Nicholas Synovic
