@@ -340,8 +340,8 @@ nav {
     li {
         font-size : 10px;
     }
-    td {
-        width : 100%;
+    td, tr {
+        display: block;
     }
     .container {
         grid-template-columns: 1fr 1fr ;
