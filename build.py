@@ -74,13 +74,13 @@ def script(elem):
     b = (
         f"function {elem}_start() "
         '{ document.getElementById("'
-        f'{elem}_image").style.opacity = "1"; '
+        f'{elem}_before").style.opacity = "1"; '
         "}"
     )
     c = (
         f"function {elem}_stop() "
         '{ document.getElementById("'
-        f'{elem}_image").style.opacity = "0"; '
+        f'{elem}_before").style.opacity = "0"; '
         "}"
     )
     d = f"{elem}_stop()"
