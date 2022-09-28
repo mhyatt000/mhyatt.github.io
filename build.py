@@ -63,8 +63,9 @@ def demo(media):
     e = f'<img src="img/{media}_before.jpg" >'
     f = "</div>"
     h = f
+    g = '</td>'
 
-    return "\n".join([a, b, c, d, e, f, h])
+    return "\n".join([a, b, c, d, e, f, h,g])
 
 
 def script(elem):
