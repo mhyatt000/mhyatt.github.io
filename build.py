@@ -60,7 +60,7 @@ def demo(media):
     a = '<td class="demo">'
     b = '<div class="one">'
     c = f'<div class="two" id="{media}">'
-    d = f'<img src="img/{media}_after.jpg" ></div>'
+    d = f'<img src="img/{media}_after.jpg" >'
     e = "</div>"
     f = f'<img src="img/{media}_before.jpg" >'
     h = e
