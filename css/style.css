@@ -332,11 +332,13 @@ nav {
     .mobile { display:initial; }
     .unmobile { display:none; }
 
+    /*
     nav {
         display : grid;
         grid-template-rows : 1fr 2fr;
         grid-template-columns : 1fr ;
-    }
+    } */
+
     li {
         font-size : 10px;
     }
