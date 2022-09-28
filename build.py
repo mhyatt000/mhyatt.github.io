@@ -89,7 +89,7 @@ def demo(media):
 def script(elem):
     """toggles opacity of element"""
 
-    a = '<script type="text/javascript">'
+    a = '<script>'
     b = (
         f"function {elem}_start() "
         '{ document.getElementById("'
