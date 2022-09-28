@@ -9,7 +9,7 @@ BR = lambda: "<br>"
 nonone = lambda x: not x in ["None", None]
 a = lambda href, text: f'<a href="{href}"> {text} </a>' if nonone(href) else text
 p = lambda text: f"<p> {text} </p>" if nonone(text) else ""
-
+em = lambda text: f"<em>{text}</em>
 
 def item(
     title=None,
@@ -39,7 +39,7 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     td = '<td style="padding:20px;width:75%;vertical-align:middle">'
 
     title = f'<span class="title">{title}</span>'
-    title = a(**{"href": None, "text": title})
+    title = a(**{"href": None, "text": em(title)})
 
     authors = "\n".join([a(**i) for i in authors])
 
