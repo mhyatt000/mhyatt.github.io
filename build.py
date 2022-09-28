@@ -6,20 +6,31 @@ from pprint import pprint
 tr = "<tr>"
 BR = lambda: "<br>"
 
-nonone = lambda x: not x in ['None',None]
+nonone = lambda x: not x in ["None", None]
 a = lambda href, text: f'<a href="{href}"> {text} </a>' if nonone(href) else text
 p = lambda text: f"<p> {text} </p>" if nonone(text) else ""
 
 
-def item(title=None, authors=None, venue=None, links=None, desc=None, name=None, project=None, arxiv=None, media=None):
+def item(
+    title=None,
+    authors=None,
+    venue=None,
+    links=None,
+    desc=None,
+    name=None,
+    project=None,
+    arxiv=None,
+    media=None,
+):
     """builds an html research item"""
 
-    g = script(media)
     tr = [f'<tr onmouseout="{media}_stop()" onmouseover="{media}_start()">', "</tr>"]
     left = demo(media)
-    right = textbox(venue=venue, authors=authors, title=title, project=project, arxiv=arxiv, desc=desc)
+    right = textbox(
+        venue=venue, authors=authors, title=title, project=project, arxiv=arxiv, desc=desc
+    )
 
-    return "\n".join([g,tr[0], left, right, tr[1]])
+    return "\n".join([tr[0], left, right, tr[1]])
 
 
 def textbox(*, venue, authors, title, project, arxiv, desc):
@@ -28,7 +39,7 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     td = '<td style="padding:20px;width:75%;vertical-align:middle">'
 
     title = f'<span class="title">{title}</span>'
-    title = a(**{"href":None, "text": title})
+    title = a(**{"href": None, "text": title})
 
     authors = "\n".join([a(**i) for i in authors])
 
@@ -43,14 +54,14 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
 
 
 # print(
-    # textbox(
-        # authors=[{"text": "Matt Hyatt", "href": "/"}],
-        # venue=["ACM", 2022],
-        # title="PRIME",
-        # project="none yet",
-        # arxiv="coming soon",
-        # desc="descriprion",
-    # )
+# textbox(
+# authors=[{"text": "Matt Hyatt", "href": "/"}],
+# venue=["ACM", 2022],
+# title="PRIME",
+# project="none yet",
+# arxiv="coming soon",
+# desc="descriprion",
+# )
 # )
 
 
@@ -63,10 +74,11 @@ def demo(media):
     d = f'<img src="img/{media}_after.jpg" >'
     e = "</div>"
     f = f'<img src="img/{media}_before.jpg" >'
-    h = e
-    g = '</td>'
+    g = e
+    h = script(media)
+    i = "</td>"
 
-    return "\n".join([a, b, c, d, e, f, h,g])
+    return "\n".join([a, b, c, d, e, f, g, h, i])
 
 
 def script(elem):
@@ -97,17 +109,17 @@ def script(elem):
 def build():
     """docstring"""
 
-    with open('pub.yaml','r') as file:
+    with open("pub.yaml", "r") as file:
         data = yaml.safe_load(file)
 
     # pprint(data[0])
 
     site = [item(**d) for d in data]
-    
-    with open('build.html','w') as file:
-        file.write('\n'.join(site))
 
-    print('done')
+    with open("build.html", "w") as file:
+        file.write("\n".join(site))
+
+    print("done")
 
 
 build()
