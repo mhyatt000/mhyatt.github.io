@@ -51,10 +51,11 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
 
     project = a(**{"href": project, "text": "project page"})
     arxiv = a(**{"href": arxiv, "text": "arxiv"})
+    pages = '\n'.join([project,' // ', arxiv])
 
     desc = p(desc)
 
-    return "\n".join([td, title, BR(), authors, BR(), venue, BR(), project, arxiv, desc, "</td>"])
+    return "\n".join([td, title, BR(), authors, BR(), venue, BR(), pages, desc, "</td>"])
 
 
 # print(
