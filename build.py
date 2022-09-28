@@ -41,9 +41,13 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     title = f'<span class="title">{title}</span>'
     title = a(**{"href": None, "text": em(title)})
 
+    for auth in authors:
+        if 'Hyatt' in auth['text']:
+            auth['text'] = em(auth['text'])
+
     authors = "\n".join([a(**i) for i in authors])
 
-    venue = f"<em>{venue[0]}</em>, {venue[1]}"
+    venue = f"{em(venue[0])}, {venue[1]}"
 
     project = a(**{"href": project, "text": "project page"})
     arxiv = a(**{"href": arxiv, "text": "arxiv"})
