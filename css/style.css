@@ -167,10 +167,9 @@ p {
 
 
 
-
+em { font-weight: bold; }
 a {
     color: var(--color-accent2);
-    font-weight: bold;
     text-decoration: none;
     height : 100%; width : 100%;
 }
