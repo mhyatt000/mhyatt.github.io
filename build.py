@@ -6,7 +6,7 @@ from pprint import pprint
 tr = "<tr>"
 BR = lambda: "<br>"
 
-nonone = lambda x: x in ['None',None]
+nonone = lambda x: not x in ['None',None]
 a = lambda href, text: f'<a href="{href}"> {text} </a>' if nonone(href) else text
 p = lambda text: f"<p> {text} </p>" if nonone(text) else p("")
 
@@ -31,6 +31,7 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     title = a(**{"href": "/", "text": title})
 
     authors = "\n".join([a(**i) for i in authors])
+
     venue = f"<em>{venue[0]}</em>, {venue[1]}"
 
     project = a(**{"href": project, "text": "project page"})
