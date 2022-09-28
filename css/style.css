@@ -47,7 +47,7 @@ body {
     font-family : "Nunito", sans-serif;
 }
 
-div { padding : 5px 5px; }
+/* div { padding : 5px 5px; } messes up the publication images .. idk why its needed tbh */
 span { text-align : center; }
 
 .flex {
@@ -242,15 +242,9 @@ td .demo { width:25%; }
     width:160px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
+.one { position: relative; }
 
 .two {
-  width: 160px;
-  height: 160px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
