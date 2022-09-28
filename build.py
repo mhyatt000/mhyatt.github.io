@@ -28,7 +28,7 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     td = '<td style="padding:20px;width:75%;vertical-align:middle">'
 
     title = f'<span class="title">{title}</span>'
-    title = a(**{"href": "/", "text": title})
+    title = a(**{"href":None, "text": title})
 
     authors = "\n".join([a(**i) for i in authors])
 
