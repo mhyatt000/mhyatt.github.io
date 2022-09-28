@@ -238,7 +238,7 @@ td {
 td#full{ width:100%; }
 td .demo { width:25%; }
 
-img {
+.one img, .two img {
     height:160;
     width:160;
 }
