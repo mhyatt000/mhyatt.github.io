@@ -166,7 +166,7 @@ button {
 }
 button:hover { 
     background: var(--color-accent2); 
-    background: white; 
+    color: white; 
 }
 
 .subcard {
