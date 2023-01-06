@@ -114,7 +114,7 @@ p {
 .rflex, .mflex { flex-direction: row; }
 @media only screen and (max-width: 500px) {
     .mflex { flex-direction: column; } /* mobile-aware flex */
-    div { max-width: auto; }
+    div { max-width: 100%; }
 }
 
 
