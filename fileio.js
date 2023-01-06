@@ -79,7 +79,7 @@ function pub2html(item){
     venue = item["venue"].join(" ");
 
     // page buttons
-    external = div(tagjoin(get_pages(item['external'])),"rflex")
+    external = div(get_pages(item['external']),"rflex")
     sub = div(tagjoin([venue, external]),"rflex subcard")
 
     desc = item['desc'] ? p(item['desc']) : "" ;
