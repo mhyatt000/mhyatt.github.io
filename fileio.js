@@ -71,7 +71,10 @@ function pub2html(item){
 
     project = a({"href": item['project'], "text": "project page"});
     arxiv = a({"href": item['arxiv'], "text": "arxiv"});
-    pages = [button(project), button(arxiv)].join(" ");
+
+    project = project.includes("href") ? button(project) : ""
+    arxiv = arxiv.includes("href") ? button(arxiv) : ""
+    pages = [project, arxiv].join(" ");
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
