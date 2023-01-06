@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cssbeautify-cli": "^0.5.3"
+  }
+}
