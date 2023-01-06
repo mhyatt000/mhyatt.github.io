@@ -28,7 +28,7 @@ function get_authors(items) {
 
 function get_pages(items) {
   let result = "" ;
-  for (const [key, value] of Object.entries(object)) {
+  for (const [key, value] of Object.entries(items)) {
     result += value ? button(a({'text':key, 'href':value})) : ""
   }
   return result;
