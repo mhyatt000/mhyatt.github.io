@@ -164,10 +164,8 @@ button {
     padding: 5px 10px;
     margin: 0px 10px;
 }
-button:hover { 
-    background: var(--color-accent2); 
-    color: white; 
-}
+button:hover { background: var(--color-accent2); }
+button a:hover { color: white; }
 
 .subcard {
     justify-content: space-between;
