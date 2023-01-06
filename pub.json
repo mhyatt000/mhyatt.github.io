@@ -40,7 +40,8 @@
       2022
     ],
     "external": {
-      "URL": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf"
+      "URL": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf",
+      "DOI": "https://dl.acm.org/doi/10.1145/3560835.3564547"
     },
     "media": "scored"
   },
@@ -111,6 +112,7 @@
     "external": {
       "project": null,
       "URL": "https://arxiv.org/abs/2207.11767",
+      "DOI": "https://dl.acm.org/doi/10.1145/3551349.3559517",
       "demo": "https://www.youtube.com/watch?v=YigEHy3_JCo",
       "tool": "https://github.com/SoftwareSystemsLaboratory/prime"
     },
