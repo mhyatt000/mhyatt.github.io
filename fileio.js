@@ -20,10 +20,10 @@ function loadText(file) {
 function get_authors(items) {
   //TODO <em> your name
 
-  let result = (items.forEach(a(item)).join("");
-  // for (const item of items) {
-    // result += a(item)
-  // }
+  let result = "" ;
+  for (const item of items) {
+    result += a(item)
+  }
   return result;
 }
 
