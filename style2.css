@@ -69,6 +69,7 @@ a i { color: var(--color-plain); }
 a i:hover { color: var(--color-accent2); }
 
 div {
+  width: 100%;
   max-width: 800px;
   margin: auto;
   padding: 5px;
