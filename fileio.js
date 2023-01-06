@@ -69,18 +69,20 @@ function pub2html(item){
     authors = get_authors(item["authors"]);
     venue = get_venue(item["venue"]);
 
+    // page buttons
     project = a({"href": item['project'], "text": "project page"});
     arxiv = a({"href": item['arxiv'], "text": "arxiv"});
 
     project = project.includes("href") ? button(project) : ""
     arxiv = arxiv.includes("href") ? button(arxiv) : ""
-    pages = [project, arxiv].join(" ");
+    pages = div([project, arxiv],"rflex");
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
-    html = div([title, authors, br(), venue, br(), pages, desc].join("\n"),"cflex");
+    // combine
+    html = div([title, div(authors), div(venue), pages, desc],"cflex");
     html = [img(item["media"]),html].join("\n")
-    html = div(html,"rflex card")
+    html = div(html,"mflex card")
 
     template.innerHTML = html
 

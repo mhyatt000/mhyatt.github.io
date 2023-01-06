@@ -22,7 +22,6 @@
 
     --color-accent1 : var(--green5);
     --color-accent2 : var(--green1);
-
     --color-main : var(--grey2);
     --color-plain : var(--grey6);
     --color-text : var(--grey6);
@@ -100,16 +99,16 @@ p {
   padding : 5px; margin : 5px;
 }
 
-#intro,  .cflex, .rflex {
+#intro,  .cflex, .rflex, .mflex {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.rflex { flex-direction: row; }
+.rflex, .mflex { flex-direction: row; }
 @media only screen and (max-width: 500px) {
-    .rflex { flex-direction: column; }
+    .mflex { flex-direction: column; } /* mobile-aware flex */
     div { max-width: auto; }
 }
 
