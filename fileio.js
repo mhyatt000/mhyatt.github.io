@@ -45,8 +45,14 @@ function p(item){
 function br(){
     return "<br>";
 }
-function div(item){
-    return `<div> \n ${item} \n </div>`;
+function cls(c){
+    return `${c ? "class="c : ""}`
+}
+function div(item, c=null){
+    return `<div ${cls(c)}> \n ${item} \n </div>`;
+}
+function img(item){
+    return `<img id="${item}" src="img/${item}_before.jpg" alt="${item}">`
 }
 
 function pub2html(item){
@@ -67,6 +73,9 @@ function pub2html(item){
     desc = item['desc'] ? p(item['desc']) : "" ;
 
     html = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
+    html = [img(item["]media"),html].join("\n")
+    html = div(html,c=".rflex")
+
     template.innerHTML = html
 
     temp = `
