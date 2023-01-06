@@ -19,6 +19,8 @@
   venue: 
     - ACM SCORED
     - 2022
+  external:
+    URL: "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf"
   media: scored
 - title: "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics"
   authors: 
@@ -53,7 +55,8 @@
   venue: 
   - ASE Tools Demo
   - 2022
-  project: 
-  arxiv: "https://arxiv.org/abs/2207.11767"
+  external:
+    project: 
+    URL: "https://arxiv.org/abs/2207.11767"
   desc: 
   media: prime

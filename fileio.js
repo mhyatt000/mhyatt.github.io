@@ -26,6 +26,14 @@ function get_authors(items) {
   return result;
 }
 
+function get_pages(items) {
+  let result = "" ;
+  for (const [key, value] of Object.entries(object)) {
+    result += value ? button(a({'text':key, 'href':value})) : ""
+  }
+  return result;
+}
+
 function em(item){
     return `<em>${item}</em>`;
 }
@@ -71,13 +79,8 @@ function pub2html(item){
     venue = item["venue"].join(" ");
 
     // page buttons
-    project = a({"href": item['project'], "text": "project page"});
-    arxiv = a({"href": item['arxiv'], "text": "arxiv"});
-
-    project = project.includes("href") ? button(project) : ""
-    arxiv = arxiv.includes("href") ? button(arxiv) : ""
-    pages = div(tagjoin([project, arxiv]),"rflex");
-    sub = div(tagjoin([venue, pages]),"rflex subcard")
+    external = div(tagjoin(get_pages(item['external'])),"rflex")
+    sub = div(tagjoin([venue, external]),"rflex subcard")
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 

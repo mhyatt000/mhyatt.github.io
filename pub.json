@@ -39,6 +39,9 @@
       "ACM SCORED",
       2022
     ],
+    "external": {
+      "URL": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf"
+    },
     "media": "scored"
   },
   {
@@ -105,8 +108,10 @@
       "ASE Tools Demo",
       2022
     ],
-    "project": null,
-    "arxiv": "https://arxiv.org/abs/2207.11767",
+    "external": {
+      "project": null,
+      "URL": "https://arxiv.org/abs/2207.11767"
+    },
     "desc": null,
     "media": "prime"
   }
