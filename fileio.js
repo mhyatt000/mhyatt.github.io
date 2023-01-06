@@ -19,7 +19,7 @@ function loadText(file) {
 
 
 function main(){
-    loadText().then((text) => {
+    loadText('pub.json').then((text) => {
     console.log(text);
     })
     .catch((error) => {
