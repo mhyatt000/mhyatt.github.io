@@ -57,6 +57,9 @@ function img(item){
 function button(item){
     return `<button> \n ${item} \n </button>`;
 }
+function tagjoin(li){
+    return li.join("\n")
+}
 
 function pub2html(item){
     // makes an html object for the publication
@@ -75,12 +78,12 @@ function pub2html(item){
 
     project = project.includes("href") ? button(project) : ""
     arxiv = arxiv.includes("href") ? button(arxiv) : ""
-    pages = div([project, arxiv],"rflex");
+    pages = div(tagjoin([project, arxiv]),"rflex");
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
     // combine
-    html = div([title, div(authors), div(venue), pages, desc],"cflex");
+    html = div(tagjoin([title, div(authors), div(venue), pages, desc]),"cflex");
     html = [img(item["media"]),html].join("\n")
     html = div(html,"mflex card")
 
