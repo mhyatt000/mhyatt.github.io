@@ -61,7 +61,7 @@ function img(item){
     return `<img id="${item}" src="img/${item}_before.jpg" alt="${item}">`
 }
 function button(item){
-    return `<button> \n ${item} \n </button>`;
+    return `<button ${cls('btn')}> \n ${item} \n </button>`;
 }
 function tagjoin(li){
     return li.join("\n")
