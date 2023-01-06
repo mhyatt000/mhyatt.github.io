@@ -75,7 +75,7 @@ function pub2html(item){
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
-    html = div([title, authors, br(), venue, br(), pages, desc].join("\n"));
+    html = div([title, authors, br(), venue, br(), pages, desc].join("\n"),"cflex");
     html = [img(item["media"]),html].join("\n")
     html = div(html,"rflex card")
 
