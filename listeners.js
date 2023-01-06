@@ -19,3 +19,5 @@ onHover('//i/../../a[3]/i')
 onHover('//i/../../a[4]/i')
 
 onHover('//nav/*[2]/*')
+
+onHover('//button[1]')
