@@ -110,6 +110,7 @@ p {
 .rflex { flex-direction: row; }
 @media only screen and (max-width: 500px) {
     .rflex { flex-direction: column; }
+    div { max-width: auto; }
 }
 
 
