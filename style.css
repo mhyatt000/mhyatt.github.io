@@ -25,6 +25,7 @@
     --color-main : var(--grey2);
     --color-plain : var(--grey6);
     --color-text : var(--grey6);
+    --transparent: rgba(0,0,0,0);
 }
 
 body {
@@ -159,13 +160,23 @@ button {
     background: var(--color-accent1);
     color: var(--grey0);
     font-weight: bold;
-    border-radius: 20px;
-    border-width: 0px;
+    border-radius: 10px;
+    border-width: 2px;
     padding: 5px 10px;
     margin: 0px 10px;
 }
 button:hover { background: var(--color-accent2); }
 button a:hover { color: white; }
+
+.btn {
+  border: 2px solid var(--color-accent1);
+  background-color: white;
+  color: var(--color-accent1);
+}
+.btn:hover {
+  background-color: var(--color-accent1);
+  color: white;
+}
 
 .subcard {
     justify-content: space-between;
