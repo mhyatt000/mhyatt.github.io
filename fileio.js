@@ -22,13 +22,15 @@ function get_authors(items) {
 
   let result = "" ;
   for (const item of items) {
-    result += a(item)
+    let name = a(item)+" "
+    name = em(name) ? name.includes("Hyatt") : name
+    result += name;
   }
   return result;
 }
 
 function get_venue(item){
-    return `${em(venue[0])}, ${venue[1]}`;
+    return `${em(item[0])}, ${item[1]}`;
 }
 
 function em(item){
@@ -58,13 +60,14 @@ function pub2html(item){
     authors = get_authors(item["authors"]);
     venue = get_venue(item["venue"]);
 
-    project = a({"href": project, "text": "project page"});
-    arxiv = a({"href": arxiv, "text": "arxiv"});
+    project = a({"href": item['project'], "text": "project page"});
+    arxiv = a({"href": item['arxiv'], "text": "arxiv"});
     pages = [project," // ", arxiv].join("");
 
-    desc = p(desc);
+    desc = p(item['desc']) ? item['desc'] : "" ;
 
-    template.innerHTML = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
+    html = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
+    template.innerHTML = html
         
     temp = `
         </td>
@@ -91,7 +94,7 @@ function pub2html(item){
     `
 
     pubs.appendChild(template.content);
-    console.log(template.content);
+    console.log(html);
 }
 
 function main(){
