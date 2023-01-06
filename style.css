@@ -69,6 +69,7 @@ a i { color: var(--color-plain); }
 a i:hover { color: var(--color-accent2); }
 
 div {
+  width: 100%;
   max-width: 800px;
   margin: auto;
   padding: 5px;
@@ -112,6 +113,7 @@ p {
 }
 
 .rflex, .mflex { flex-direction: row; }
+
 @media only screen and (max-width: 500px) {
     .mflex { flex-direction: column; } /* mobile-aware flex */
     div { max-width: 100%; }
