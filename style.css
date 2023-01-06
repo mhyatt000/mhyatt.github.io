@@ -1,7 +1,7 @@
 :root{
+
     --radius:5px;
 
-    /* colors */
     --grey0 : gainsboro;
     --grey1 : #CFCFCF;
     --grey2 : #A8A8A8;
@@ -28,97 +28,62 @@
     --color-text : var(--grey6);
 }
 
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body {
-    margin : 0;
-    background : var(--color-main);
-    color : var(--color-text);
-    font-family : "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  background-color: var(--color-main);
+  font-size: 16px; 
 }
 
-/* div { padding : 5px 5px; } messes up the publication images .. idk why its needed tbh */
-span { text-align : center; }
-
-.flex {
-    display: flex;
-
-}
-.row {
-    height : 100%;
-    display: grid;
-    grid-auto-flow: column;
-    grid-row : 1;
-}
-.col {
-    width : 100%;
-    display : grid;
-    /* border: 3px rgb(216, 117, 81) solid; */
-
-    grid-template-columns : 100%;
-    grid-auto-flow: row;
-    grid-column : 1;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-accent1);
+  color: #fff;
 }
 
-/* grids and flex boxes are spaced evenly by default */
-.even , .row , .col , .flex {
-    width : 100%;
-    grid-gap : 10px;
-    justify-content : space-evenly;
-    justify-items : center;
-    align-content : space-evenly;
-    align-items: center;
+nav * {
+  color: var(--color-main);
+  text-decoration: none;
 }
-.center {
-    justify-content : center;
-    justify-items : center;
-    align-content : center;
-    align-items: center;
+nav *:hover { color: var(--grey0); }
+
+a:not(nav *) {
+  color: var(--color-accent2);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-#avatar {
-    margin: 80px 20px 20px 20px;
-    border-radius: 50%;
-    width: 200px;
+a i { color: var(--color-plain); }
+a i:hover { color: var(--color-accent2); }
+
+div {
+  max-width: 800px;
+  margin: auto;
+  padding: 5px;
+  font-style: normal;
 }
 
-#intro {
-    align-self: center;
-
-    display: grid; grid-template-rows : auto;
-
-    justify-content : center;
-    justify-items : center;
-    align-content : center;
-    align-items: center;
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  place-items: center;
 }
 
-.content-left{
-    grid-area: content-left;
-}
-.content-right{
-    grid-area: content-right;
-}
-.content-center {
-    grid-area: content-left / content-left / content-left / content-right;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    overflow: auto;
+.autorow{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.double {
-    width : 100%;
-    display : grid;
-    grid-gap : 10px;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr 1fr;
+section {
+    padding: 10px
+}
+
+.light {
+    background: var(--grey0);
 }
 
 h1, h2, h3 {
@@ -127,236 +92,34 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-.text-center , h1, h2 {
-    text-align : center;
-}
-
-ul {
-    padding : 0px 0px
-}
-
-li {
-    list-style: none;
-}
-
-li.bullet {
-    list-style : inside;
-}
-
-i {
-    /* background : var(--color-main); */
-    color : var(--color-plain);
-}
-i:hover {
-    color : var(--color-accent2);
-}
-
-
 p {
-    color: var(--color-text);
-    font-size : 15px;
-    line-height: 2;
-    margin : 5px; padding : 5px;
+  padding : 5px; margin : 5px;
 }
 
-
-
-em { font-style: normal; font-weight: bold; }
-a {
-    color: var(--color-accent2);
-    text-decoration: none;
-    height : 100%; width : 100%;
+#intro,  .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-td a:hover {
-    text-decoration: underline;
-} 
-
-nav a {
-    color: var(--color-main);
-    text-decoration: none;
+#intro {
+  text-transform: uppercase;
+  text-align: center;
 }
 
-nav li a{
-    letter-spacing : 3px; /* could make em h3 h4 */
-    padding : 12px 8px;
+#avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 60px 1rem 1rem 1rem;
 }
 
-
-p a , h1 a {
-    color : var(--color-accent2);
-}
-p a:hover , h1 a:hover {
-    text-decoration: underline;
+#socials a {
+  color: var(--color-accent2);
+  margin: 0 0.5rem;
 }
 
-nav a:hover {
-    /* background-color: var(--color-accent2); */
-    color : var(--grey0);
-}
-
-
-.onpage {
-    background-color : var(--color-main);
-    color : var(--color-accent1);
-}
-
-embed {
-    align-self: stretch;
-}
-
-
-
-.textcenter {
-    text-align : center;
-}
-
-table {
-    width:100%;
-    max-width:800px;
-    border:0px;
-    border-spacing:0px;
-    border-collapse:separate;
-    margin-right:auto;
-    margin-left:auto;
-}
-
-tr, td { padding:0px; }
-
-td {
-    padding:20px;
-    vertical-align:middle;
-}
-
-td#full{ width:100%; }
-td .demo { width:25%; }
-
-.one img, .two img {
-    max-height:160px;
-    max-width:160px;
-    width:160px;
-}
-
-.one { position: relative; }
-
-.two {
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight { background-color: #ffffd0; }
-
-
-
-/* approved ^^^ */
-
-.container {
-    margin : 0;
-    padding : 0;
-    min-height : 98vh;
-    display:grid;
-
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-rows: 60px 1fr 1fr;
-    grid-template-areas:
-        "nav nav nav nav"
-        ". main main ."
-        ". main main .";
-    grid-gap:0.2rem;
-
-    font-weight: 800;
-    font-size:12px;
-}
-
-main{
-    padding : 0 5px 0 5px; margin : 0 5px 0 5px;
-    display: grid;
-    grid-area: main;
-    grid-template-columns:  1fr 1fr ;
-    grid-template-rows:  60px 1.5fr;
-
-    grid-template-areas:
-        ". ."
-        "content-left content-right";
-
-    grid-gap:0.2rem;
-    font-size:12px;
-}
-
-nav {
-    background: var(--color-accent1);
-    color : var(--color-main);
-
-    /* cant stick cuz its in the grid but you could overlay and fix */
-    position: sticky;
-    top: 0px;
-
-    grid-area: nav;
-
-    display: flex;
-
-    justify-content: space-evenly; 
-    align-items: center;
-
-    min-height: 8vh;
-    text-transform: uppercase;
-
-}
-
-.highlight:hover {
-    background: var(--grey1);
-    border-radius : 5px;
-}
-
-.mobile { display:none; }
-.unmobile { display:initial; }
-.noscroll { overflow-x: hidden; }
-
-/* mobile */
-@media only screen and (max-width: 768px) {
-
-    .mobile { display:initial; }
-    .unmobile { display:none; }
-
-    /*
-    nav {
-        display : grid;
-        grid-template-rows : 1fr 2fr;
-        grid-template-columns : 1fr ;
-    } */
-
-    li {
-        font-size : 10px;
-    }
-    td, tr {
-        display: block;
-    }
-    .container {
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 100px 1fr 1fr;
-        grid-template-areas:
-            "nav nav"
-            "main main"
-            "main main";
-    }
-
-    .double {
-        width : 100%;
-        display : grid;
-        grid-gap : 10px;
-        grid-auto-flow: dense;
-        grid-template-columns: 1fr;
-    }
-
-    p { font-size : 10px; }
-    h2 { font-size : 15px; }
-
+#socials a:hover {
+  color: var(--color-text);
 }

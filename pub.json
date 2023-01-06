@@ -1,0 +1,113 @@
+[
+  {
+    "title": "An Empirical Study of Artifacts and Security Risks in the Pretrained Model Supply Chain",
+    "authors": [
+      {
+        "text": "Wenxin Jiang",
+        "href": "https://wenxin-jiang.github.io/"
+      },
+      {
+        "text": "Nicholas Synovic",
+        "href": "https://nicholassynovic.github.io/"
+      },
+      {
+        "text": "Rohan Sethi",
+        "href": null
+      },
+      {
+        "text": "Aryan Indarapu",
+        "href": null
+      },
+      {
+        "text": "Matt Hyatt",
+        "href": null
+      },
+      {
+        "text": "Taylor R. Schorlemmer",
+        "href": null
+      },
+      {
+        "text": "George K.  Thiruvathukal",
+        "href": "https://gkt.cs.luc.edu/"
+      },
+      {
+        "text": "James C. Davis",
+        "href": "https://davisjam.github.io/"
+      }
+    ],
+    "venue": [
+      "ACM SCORED",
+      2022
+    ],
+    "media": "scored"
+  },
+  {
+    "title": "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics",
+    "authors": [
+      {
+        "text": "Nicholas Synovic",
+        "href": "https://nicholassynovic.github.io/"
+      },
+      {
+        "text": "Matt Hyatt",
+        "href": null
+      },
+      {
+        "text": "Rohan Sethi",
+        "href": null
+      },
+      {
+        "text": "Sohini Thota",
+        "href": null
+      },
+      {
+        "text": "Shilpika",
+        "href": null
+      },
+      {
+        "text": "Allan J. Miller",
+        "href": null
+      },
+      {
+        "text": "Wenxin Jiang",
+        "href": "https://wenxin-jiang.github.io/"
+      },
+      {
+        "text": "Emmanuel S. Amobi",
+        "href": null
+      },
+      {
+        "text": "Austin Pinderski",
+        "href": null
+      },
+      {
+        "text": "Konstantin Läufer",
+        "href": null
+      },
+      {
+        "text": "Nicholas J. Hayward",
+        "href": null
+      },
+      {
+        "text": "Neil Klingensmith",
+        "href": "https://neilklingensmith.com/"
+      },
+      {
+        "text": "James C. Davis",
+        "href": "https://davisjam.github.io/"
+      },
+      {
+        "text": "George K. Thiruvathukal",
+        "href": "https://gkt.cs.luc.edu/"
+      }
+    ],
+    "venue": [
+      "ASE Tools Demo",
+      2022
+    ],
+    "project": null,
+    "arxiv": "https://arxiv.org/abs/2207.11767",
+    "desc": null,
+    "media": "prime"
+  }
+]
