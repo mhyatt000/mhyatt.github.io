@@ -149,6 +149,11 @@ img {
     border-radius: 5px;
     margin: 10px;
 }
+.card div { 
+    align-self: start;
+    margin: 0px;
+}
+.card * a { font-weight: normal; }
 
 button {
     background: var(--color-accent1);
