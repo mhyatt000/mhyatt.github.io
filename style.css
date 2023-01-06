@@ -123,7 +123,7 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 5px;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 #avatar {
@@ -144,8 +144,9 @@ img {
     opacity: 0;
 }
 
-.rflex {
+.rflex { /* currently rflex is used as pub card */
     background: white; 
     box-shadow: 1px 1px 20px var(--color-text);
     border-radius: 5px;
+    margin: 10px;
 }
