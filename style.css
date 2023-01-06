@@ -57,7 +57,10 @@ a:not(nav *) {
   font-weight: bold;
 }
 
-em { font-weight: bold; }
+em { 
+  font-weight: bold; 
+  font-style: normal;
+}
 a i { color: var(--color-plain); }
 a i:hover { color: var(--color-accent2); }
 
