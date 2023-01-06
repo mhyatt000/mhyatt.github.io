@@ -89,7 +89,8 @@ function pub2html(item){
         <br>
     `
 
-    pubs.appendChild(template.content)
+    pubs.appendChild(template.content);
+    console.log(template.content);
 }
 
 function main(){
