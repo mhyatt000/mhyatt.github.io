@@ -150,3 +150,13 @@ img {
     border-radius: 5px;
     margin: 10px;
 }
+
+button {
+    background: var(--color-accent1);
+    color: var(--grey0);
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 5px 10px;
+    margin: 10px;
+}

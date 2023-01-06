@@ -54,6 +54,9 @@ function div(item, c=null){
 function img(item){
     return `<img id="${item}" src="img/${item}_before.jpg" alt="${item}">`
 }
+function button(item){
+    return `<button> \n ${item} \n </button>`;
+}
 
 function pub2html(item){
     // makes an html object for the publication
@@ -68,7 +71,7 @@ function pub2html(item){
 
     project = a({"href": item['project'], "text": "project page"});
     arxiv = a({"href": item['arxiv'], "text": "arxiv"});
-    pages = [project," // ", arxiv].join("");
+    pages = [button(project), button(arxiv)].join(" ");
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
