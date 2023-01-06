@@ -164,7 +164,10 @@ button {
     padding: 5px 10px;
     margin: 10px;
 }
-button:hover { color: var(--color-accent2); }
+button:hover { 
+    background: var(--color-accent2); 
+    background: white; 
+}
 
 
 .subcard {
