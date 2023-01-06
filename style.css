@@ -162,13 +162,12 @@ button {
     border-radius: 20px;
     border-width: 0px;
     padding: 5px 10px;
-    margin: 10px;
+    margin: 0px 10px;
 }
 button:hover { 
     background: var(--color-accent2); 
     background: white; 
 }
-
 
 .subcard {
     justify-content: space-between;
