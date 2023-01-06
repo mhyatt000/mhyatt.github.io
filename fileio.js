@@ -68,7 +68,7 @@ function pub2html(item){
 
     title = `<h4> ${item["title"]}</h4>`;
     authors = get_authors(item["authors"]);
-    venue = item["venue"];
+    venue = item["venue"].join(" ");
 
     // page buttons
     project = a({"href": item['project'], "text": "project page"});
