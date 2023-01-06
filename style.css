@@ -186,7 +186,7 @@ button a:hover { color: white; }
 .fa-scholar {
     content: url('https://raw.githubusercontent.com/jpswalsh/academicons/master/svg/google-scholar.svg');
     filter: invert(13%) sepia(10%) saturate(42%) hue-rotate(316deg) brightness(101%) contrast(83%);
-    margin: auto auto -7px auto ;
+    margin: auto -4px -7px -4px ;
     height: 1.1em;
     width: auto;
 }
