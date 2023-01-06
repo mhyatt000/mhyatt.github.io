@@ -123,3 +123,7 @@ p {
 #socials a:hover {
   color: var(--color-text);
 }
+
+.hoverhide:hover {
+    opacity: 0;
+}

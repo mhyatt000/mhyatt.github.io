@@ -45,6 +45,7 @@ function br(){
 }
 function div(item){
     return `<div> \n ${item} \n </div>`;
+}
 
 function pub2html(item){
     // makes an html object for the publication
