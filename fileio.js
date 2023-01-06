@@ -46,7 +46,7 @@ function br(){
     return "<br>";
 }
 function cls(c){
-    return `${c ? "class="+c : ""}`
+    return c ? 'class="' + `${c}"` : ""
 }
 function div(item, c=null){
     return `<div ${cls(c)}> \n ${item} \n </div>`;
