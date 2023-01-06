@@ -28,42 +28,42 @@ function get_authors(items) {
 }
 
 function get_venue(item){
-    return `${em(venue[0])}, ${venue[1]}`
+    return `${em(venue[0])}, ${venue[1]}`;
 }
 
 function em(item){
-    return `<em>${item}</em>`
+    return `<em>${item}</em>`;
 }
 function a(item){
     return item.href ? `<a href="${item.href}">${item.text}</a>` : item.text;
 }
 function p(item){
-    return `<p>${item}</p>`
+    return `<p>${item}</p>`;
 }
 function br(){
-    return "<br>"
+    return "<br>";
 }
 function div(item){
-    return `<div> \n ${item} \n </div>`
+    return `<div> \n ${item} \n </div>`;
 
 function pub2html(item){
     // makes an html object for the publication
     // sends to <div id="pub">
 
     const pubs = document.querySelector("#pub");
-    const template = document.createElement("template")
+    const template = document.createElement("template");
 
-    title = `<span ${item["title"]}</span>`
-    authors = get_authors(item["authors"])
-    venue = get_venue(item["venue"])
+    title = `<span ${item["title"]}</span>`;
+    authors = get_authors(item["authors"]);
+    venue = get_venue(item["venue"]);
 
-    project = a({"href": project, "text": "project page"})
-    arxiv = a({"href": arxiv, "text": "arxiv"})
-    pages = [project," // ", arxiv].join("")
+    project = a({"href": project, "text": "project page"});
+    arxiv = a({"href": arxiv, "text": "arxiv"});
+    pages = [project," // ", arxiv].join("");
 
-    desc = p(desc)
+    desc = p(desc);
 
-    template.innerHTML = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"))
+    template.innerHTML = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
         
     temp = `
         </td>
