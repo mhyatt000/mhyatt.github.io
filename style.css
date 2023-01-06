@@ -144,7 +144,7 @@ img {
     opacity: 0;
 }
 
-.rflex { /* currently rflex is used as pub card */
+.card { 
     background: white; 
     box-shadow: 1px 1px 20px var(--color-text);
     border-radius: 5px;
