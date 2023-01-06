@@ -57,6 +57,10 @@ a:not(nav *, button *) {
   font-weight: bold;
 }
 
+a:not(nav *, button *):hover {
+    text-decoration: underline;
+}
+
 em { 
   font-weight: bold; 
   font-style: normal;
