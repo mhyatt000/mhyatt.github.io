@@ -182,3 +182,15 @@ button a:hover { color: white; }
 }
 .subcard div { margin: 0px; }
 
+
+.fa-scholar {
+    content: url('https://raw.githubusercontent.com/jpswalsh/academicons/master/svg/google-scholar.svg');
+    filter: invert(13%) sepia(10%) saturate(42%) hue-rotate(316deg) brightness(101%) contrast(83%);
+    margin: auto auto -7px auto ;
+    height: 1.1em;
+    width: auto;
+}
+.fa-scholar:hover { 
+    filter: invert(27%) sepia(56%) saturate(449%) hue-rotate(29deg) brightness(93%) contrast(91%);
+}
+
