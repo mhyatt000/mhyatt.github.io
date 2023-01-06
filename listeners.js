@@ -6,7 +6,7 @@ function onHover(xpath) {
   const element = getXpath(xpath)
 
   element.addEventListener('mouseenter', () => {
-    element.style.transform = 'scale(1.1)';
+    element.style.transform = 'scale(1.2)';
   });
   element.addEventListener('mouseleave', () => {
     element.style.transform = 'scale(1)';
