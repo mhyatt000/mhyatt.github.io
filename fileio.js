@@ -1,4 +1,3 @@
-
 function loadText(file) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -18,8 +17,6 @@ function loadText(file) {
 }
 
 function get_authors(items) {
-  //TODO <em> your name
-
   let result = "" ;
   for (const item of items) {
     let name = a(item)+" "
@@ -27,10 +24,6 @@ function get_authors(items) {
     result += name;
   }
   return result;
-}
-
-function get_venue(item){
-    return `${em(item[0])}, ${item[1]}`;
 }
 
 function em(item){
@@ -45,12 +38,17 @@ function p(item){
 function br(){
     return "<br>";
 }
+
 function cls(c){
     return c ? 'class="' + `${c}"` : ""
 }
-function div(item, c=null){
-    return `<div ${cls(c)}> \n ${item} \n </div>`;
+function style(s){
+    return s ? 'style="' + `${s}"` : ""
 }
+function div(item, c=null,s=null){
+    return `<div ${cls(c)} ${style(s)}> \n ${item} \n </div>`;
+}
+
 function img(item){
     return `<img id="${item}" src="img/${item}_before.jpg" alt="${item}">`
 }
@@ -70,7 +68,7 @@ function pub2html(item){
 
     title = `<h4> ${item["title"]}</h4>`;
     authors = get_authors(item["authors"]);
-    venue = get_venue(item["venue"]);
+    venue = item["venue"];
 
     // page buttons
     project = a({"href": item['project'], "text": "project page"});
@@ -79,11 +77,12 @@ function pub2html(item){
     project = project.includes("href") ? button(project) : ""
     arxiv = arxiv.includes("href") ? button(arxiv) : ""
     pages = div(tagjoin([project, arxiv]),"rflex");
+    sub = div(tagjoin([venue, pages]),"rflex subcard")
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
     // combine
-    html = div(tagjoin([title, div(authors), div(venue), pages, desc]),"cflex");
+    html = div(tagjoin([title, div(authors), sub, desc]),"cflex");
     html = [img(item["media"]),html].join("\n")
     html = div(html,"mflex card")
 
