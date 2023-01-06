@@ -58,18 +58,6 @@ def textbox(*, venue, authors, title, project, arxiv, desc):
     return "\n".join([td, title, BR(), authors, BR(), venue, BR(), pages, desc, "</td>"])
 
 
-# print(
-# textbox(
-# authors=[{"text": "Matt Hyatt", "href": "/"}],
-# venue=["ACM", 2022],
-# title="PRIME",
-# project="none yet",
-# arxiv="coming soon",
-# desc="descriprion",
-# )
-# )
-
-
 def demo(media):
     """builds demo str"""
 
