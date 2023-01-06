@@ -74,7 +74,7 @@ function pub2html(item){
 
     html = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
     html = [img(item["media"]),html].join("\n")
-    html = div(html,c=".rflex")
+    html = div(html,".rflex")
 
     template.innerHTML = html
 

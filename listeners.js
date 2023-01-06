@@ -18,4 +18,4 @@ onHover('//i/../../a[2]/i')
 onHover('//i/../../a[3]/i')
 onHover('//i/../../a[4]/i')
 
-
+onHover('//nav/*[2]/*')
