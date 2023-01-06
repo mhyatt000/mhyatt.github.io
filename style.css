@@ -143,3 +143,9 @@ img {
 .hoverhide:hover {
     opacity: 0;
 }
+
+.rflex {
+    background: white; 
+    box-shadow: 1px 1px 20px var(--color-text);
+    border-radius: 5px;
+}
