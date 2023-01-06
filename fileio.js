@@ -80,7 +80,7 @@ function pub2html(item){
 
     // page buttons
     external = div(get_pages(item['external']),"rflex")
-    sub = div(tagjoin([venue, external]),"rflex subcard")
+    sub = div(tagjoin([venue, external]),"mflex subcard")
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
