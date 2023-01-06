@@ -73,7 +73,7 @@ function pub2html(item){
     desc = item['desc'] ? p(item['desc']) : "" ;
 
     html = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
-    html = [img(item["]media"),html].join("\n")
+    html = [img(item["media"]),html].join("\n")
     html = div(html,c=".rflex")
 
     template.innerHTML = html
