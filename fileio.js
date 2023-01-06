@@ -23,7 +23,7 @@ function get_authors(items) {
   let result = "" ;
   for (const item of items) {
     let name = a(item)+" "
-    name = em(name) ? name.includes("Hyatt") : name
+    name = name.includes("Hyatt") ?  em(name) : name
     result += name;
   }
   return result;
@@ -64,11 +64,11 @@ function pub2html(item){
     arxiv = a({"href": item['arxiv'], "text": "arxiv"});
     pages = [project," // ", arxiv].join("");
 
-    desc = p(item['desc']) ? item['desc'] : "" ;
+    desc = item['desc'] ? p(item['desc']) : "" ;
 
     html = div([title, br(), authors, br(), venue, br(), pages, desc].join("\n"));
     template.innerHTML = html
-        
+
     temp = `
         </td>
         </tr>
