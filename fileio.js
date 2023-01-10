@@ -74,7 +74,7 @@ function pub2html(item){
     const pubs = document.querySelector("#pub");
     const template = document.createElement("template");
 
-    title = `<h4> ${item["title"]}</h4>`;
+    title = div(em(`${item["title"]}`));
     authors = get_authors(item["authors"]);
     venue = item["venue"].join(" ");
 

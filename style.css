@@ -25,6 +25,8 @@
     --color-main : var(--grey2);
     --color-plain : var(--grey6);
     --color-text : var(--grey6);
+
+    --maroon: #5D0024;
     --transparent: rgba(0,0,0,0);
 }
 
@@ -156,7 +158,7 @@ img {
     margin: 10px;
 }
 .card div { 
-    align-self: start;
+    align-self: center;
     margin: 0px;
 }
 .card * a { font-weight: normal; }
