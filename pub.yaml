@@ -1,3 +1,29 @@
+- title: "An Empirical Study of Pre-Trained Model Reuse in the Hugging Face Deep Learning Model Registry"
+  authors:
+  - text: Wenxin Jiang
+    href: "https://wenxin-jiang.github.io/"
+  - text: Nicholas Synovic
+    href: "https://nicholassynovic.github.io/"
+  - text: Matt Hyatt
+    href: 
+  - text: Taylor R. Schorlemmer
+    href: 
+  - text: Rohan Sethi 
+    href: 
+  - text: Yung-Hsiang Lu 
+    href: "https://yhlu.net/"
+  - text: George K. Thiruvathukal 
+    href: "https://gkt.cs.luc.edu/"
+  - text: James C. Davis
+    href: "https://davisjam.github.io/"
+  venue: 
+    - ICSE
+    - 2023
+  external:
+    URL: ""
+    DOI: ""
+  media: null
+
 - title: "An Empirical Study of Artifacts and Security Risks in the Pretrained Model Supply Chain"
   authors:
   - text: Wenxin Jiang
@@ -23,6 +49,7 @@
     URL: "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf"
     DOI: "https://dl.acm.org/doi/10.1145/3560835.3564547"
   media: scored
+
 - title: "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics"
   authors: 
   - text: Nicholas Synovic
