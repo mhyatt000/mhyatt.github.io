@@ -12,7 +12,7 @@ function hoverListener(element){
 }
 
 function onHover(xpath=null, alltag=null, ratio=1.1) {
-  if !(xpath || alltag)
+  if (!(xpath || alltag))
     return
 
   if (xpath) {
