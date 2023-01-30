@@ -30,6 +30,7 @@ function build_navbar(){
         </h2></div>
         <div><ul class="nav-links row center">
             <li>${highlight('<a href="docs/matthewhyatt-cv.pdf">CV</a>')}</li>
+            <li>${highlight('<a href="mlex">MLEX</a>')}</li>
         </ul></div>
     `
 
