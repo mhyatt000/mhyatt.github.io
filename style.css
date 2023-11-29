@@ -126,16 +126,25 @@ p {
   text-align: center;
 }
 
+.img-wrapper {
+    width: 200px;
+    height: 200px;
+    display: flex; /* Helps center the image inside the wrapper */
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+    background-color: #ffffff; /* Background color for empty space */
+}
+
 img {
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-  margin: 0.5rem;
+    max-width: 200px; /* Max width is 100% of the wrapper */
+    max-height: 200px; /* Max height is 100% of the wrapper */
 }
 
 #avatar {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  margin: 80px 1rem 1rem 1rem;
+  margin: 1rem 1rem ;
 }
 
 #socials a {

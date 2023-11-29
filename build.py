@@ -22,7 +22,9 @@ def item(
     arxiv=None,
     media=None,
 ):
-    """builds an html research item"""
+    """
+    builds an html research item
+    """
 
     tr = [f'<tr onmouseout="{media}_stop()" onmouseover="{media}_start()">', "</tr>"]
     left = demo(media)

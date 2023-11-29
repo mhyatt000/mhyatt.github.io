@@ -1,3 +1,42 @@
+- title: "Towards Human-inspired Visual Perception Networks"
+  authors:
+  - text: Luke Baumel
+    href: 
+  - text: Matthew Hyatt
+    href: 
+  - text: Mikayla Cutler
+    href: 
+  - text: Joseph Tocco
+    href: 
+  - text: George K. Thiruvathukal 
+    href: "https://gkt.cs.luc.edu/"
+  - text: Nicholas Baker
+    href: 
+  venue: 
+    - "**UNDER PREPARATION"
+    - 2024
+  external:
+    URL: ""
+    DOI: ""
+  media: cogsci.gif
+
+
+- title: "Robust Source Attribution of Synthetically Generated Western Blot Images"
+  authors:
+  - text: Matthew Hyatt
+    href: 
+  - text: George K. Thiruvathukal 
+    href: "https://gkt.cs.luc.edu/"
+  - text: Daniel Moreira
+    href: "https://danielmoreira.github.io/"
+  venue: 
+    - Loyola eCommons
+    - 2023
+  external:
+    URL: ""
+    DOI: ""
+  media: sciint.gif
+
 - title: "An Empirical Study of Pre-Trained Model Reuse in the Hugging Face Deep Learning Model Registry"
   authors:
   - text: Wenxin Jiang
@@ -21,8 +60,8 @@
     - 2023
   external:
     URL: ""
-    DOI: ""
-  media: null
+    DOI: "https://doi.org/10.1109/ICSE48619.2023.00206"
+  media: icse.gif
 
 - title: "An Empirical Study of Artifacts and Security Risks in the Pretrained Model Supply Chain"
   authors:
@@ -48,7 +87,7 @@
   external:
     URL: "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf"
     DOI: "https://dl.acm.org/doi/10.1145/3560835.3564547"
-  media: scored
+  media: scored.jpg
 
 - title: "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics"
   authors: 
@@ -90,4 +129,4 @@
     demo: "https://www.youtube.com/watch?v=YigEHy3_JCo"
     tool: "https://github.com/SoftwareSystemsLaboratory/prime"
   desc: 
-  media: prime
+  media: prime.gif

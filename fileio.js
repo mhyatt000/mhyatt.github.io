@@ -17,13 +17,8 @@ function loadText(file) {
 }
 
 function get_authors(items) {
-  let result = "" ;
-  for (const item of items) {
-    let name = a(item)+" "
-    name = name.includes("Hyatt") ?  em(name) : name
-    result += name;
-  }
-  return result;
+  let ifem = name => name.includes("Hyatt") ?  em(name) : name
+  return items.map(i => a(i)).map(i => ifem(i)).join(", ")
 }
 
 function get_pages(items) {
@@ -58,7 +53,8 @@ function div(item, c=null,s=null){
 }
 
 function img(item){
-    return `<img id="${item}" src="img/${item}_before.jpg" alt="${item}">`
+    i = `<img id="${item}" src="img/${item}" alt="${item}">`
+    return div(i, "img-wrapper")
 }
 function button(item){
     return `<button ${cls('btn')}> \n ${item} \n </button>`;
@@ -85,7 +81,7 @@ function pub2html(item){
     desc = item['desc'] ? p(item['desc']) : "" ;
 
     // combine
-    html = div(tagjoin([title, div(authors), sub, desc]),"cflex");
+    html = div(tagjoin([title, div(authors), sub, desc]));
     html = [img(item["media"]),html].join("\n")
     html = div(html,"mflex card")
 
@@ -99,9 +95,9 @@ function pub2html(item){
 
         <div class="one">
         <div class="two" id="prime_image">
-        <img src="img/prime_after.jpg" >
+        <img src="img/prime.jpg" >
         </div>
-        <img src="img/prime_before.jpg" >
+        <img src="img/prime.jpg" >
         </div>
 
         <script>

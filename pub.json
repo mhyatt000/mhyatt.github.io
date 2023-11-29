@@ -1,5 +1,69 @@
 [
   {
+    "title": "Towards Human-inspired Visual Perception Networks",
+    "authors": [
+      {
+        "text": "Luke Baumel",
+        "href": null
+      },
+      {
+        "text": "Matthew Hyatt",
+        "href": null
+      },
+      {
+        "text": "Mikayla Cutler",
+        "href": null
+      },
+      {
+        "text": "Joseph Tocco",
+        "href": null
+      },
+      {
+        "text": "George K. Thiruvathukal",
+        "href": "https://gkt.cs.luc.edu/"
+      },
+      {
+        "text": "Nicholas Baker",
+        "href": null
+      }
+    ],
+    "venue": [
+      "**UNDER PREPARATION",
+      2024
+    ],
+    "external": {
+      "URL": "",
+      "DOI": ""
+    },
+    "media": "cogsci.gif"
+  },
+  {
+    "title": "Robust Source Attribution of Synthetically Generated Western Blot Images",
+    "authors": [
+      {
+        "text": "Matthew Hyatt",
+        "href": null
+      },
+      {
+        "text": "George K. Thiruvathukal",
+        "href": "https://gkt.cs.luc.edu/"
+      },
+      {
+        "text": "Daniel Moreira",
+        "href": "https://danielmoreira.github.io/"
+      }
+    ],
+    "venue": [
+      "Loyola eCommons",
+      2023
+    ],
+    "external": {
+      "URL": "",
+      "DOI": ""
+    },
+    "media": "sciint.gif"
+  },
+  {
     "title": "An Empirical Study of Pre-Trained Model Reuse in the Hugging Face Deep Learning Model Registry",
     "authors": [
       {
@@ -41,9 +105,9 @@
     ],
     "external": {
       "URL": "",
-      "DOI": ""
+      "DOI": "https://doi.org/10.1109/ICSE48619.2023.00206"
     },
-    "media": null
+    "media": "icse.gif"
   },
   {
     "title": "An Empirical Study of Artifacts and Security Risks in the Pretrained Model Supply Chain",
@@ -89,7 +153,7 @@
       "URL": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf",
       "DOI": "https://dl.acm.org/doi/10.1145/3560835.3564547"
     },
-    "media": "scored"
+    "media": "scored.jpg"
   },
   {
     "title": "Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics",
@@ -163,6 +227,6 @@
       "tool": "https://github.com/SoftwareSystemsLaboratory/prime"
     },
     "desc": null,
-    "media": "prime"
+    "media": "prime.gif"
   }
 ]
