@@ -29,10 +29,11 @@
     ],
     "venue": [
       "**UNDER PREPARATION",
+      "COGSCI",
       2024
     ],
     "external": {
-      "URL": "",
+      "PDF": "",
       "DOI": ""
     },
     "media": "cogsci.gif"
@@ -58,7 +59,9 @@
       2023
     ],
     "external": {
-      "URL": "",
+      "PDF": "",
+      "PDF": "https://mhyatt000.github.io/docs/robust-attribution.pdf",
+      "CODE": "https://github.com/mhyatt000/vision",
       "DOI": ""
     },
     "media": "sciint.gif"
@@ -104,7 +107,7 @@
       2023
     ],
     "external": {
-      "URL": "",
+      "PDF": "",
       "DOI": "https://doi.org/10.1109/ICSE48619.2023.00206"
     },
     "media": "icse.gif"
@@ -146,11 +149,11 @@
       }
     ],
     "venue": [
-      "ACM SCORED",
+      "SCORED",
       2022
     ],
     "external": {
-      "URL": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf",
+      "PDF": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf",
       "DOI": "https://dl.acm.org/doi/10.1145/3560835.3564547"
     },
     "media": "scored.jpg"
@@ -220,11 +223,12 @@
       2022
     ],
     "external": {
-      "project": null,
-      "URL": "https://arxiv.org/abs/2207.11767",
+      "project": "https://mhyatt000.github.io/prime",
+      "PDF": "https://arxiv.org/abs/2207.11767",
       "DOI": "https://dl.acm.org/doi/10.1145/3551349.3559517",
-      "demo": "https://www.youtube.com/watch?v=YigEHy3_JCo",
-      "tool": "https://github.com/SoftwareSystemsLaboratory/prime"
+      "DEMO": "https://www.youtube.com/watch?v=YigEHy3_JCo",
+      "CODE": "https://github.com/SoftwareSystemsLaboratory/prime",
+      "DATA": "https://doi.org/10.5281/zenodo.6477789"
     },
     "desc": null,
     "media": "prime.gif"

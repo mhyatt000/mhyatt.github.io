@@ -35,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-text);
-  background-color: var(--color-main);
+  background-color: #ffffff;
   font-size: 16px; 
 }
 
@@ -71,7 +71,7 @@ a i { color: var(--color-plain); }
 a i:hover { color: var(--color-accent2); }
 
 div {
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
   padding: 5px;
   font-style: normal;
@@ -89,11 +89,11 @@ div {
 }
 
 section {
-    padding: 10px
+    padding: 5px
 }
 
 .light {
-    background: var(--grey0);
+    background: #ffffff;
 }
 
 h1, h2, h3, h4 {
@@ -127,6 +127,7 @@ p {
 }
 
 .img-wrapper {
+    padding: 0px;
     width: 200px;
     height: 200px;
     display: flex; /* Helps center the image inside the wrapper */
@@ -161,14 +162,16 @@ img {
 }
 
 .card { 
+    max-width: 1000px;
     background: white; 
-    box-shadow: 1px 1px 20px var(--color-text);
-    border-radius: 5px;
-    margin: 10px;
+    margin: 0px;
+    padding: 0px;
 }
 .card div { 
     align-self: center;
     margin: 0px;
+    padding: 0px 5px;
+    width: 100%;
 }
 .card * a { font-weight: normal; }
 
@@ -176,8 +179,8 @@ button {
     font-weight: bold;
     border-radius: 10px;
     border-width: 2px;
-    padding: 5px 10px;
-    margin: 0px 10px;
+    padding: 5px;
+    margin: 0px 5;
 }
 button:hover { background: var(--color-accent2); }
 button a:hover { color: white; }

@@ -22,15 +22,11 @@ function get_authors(items) {
 }
 
 function get_pages(items) {
-  ifbutton = (k,v) => v  ? a({'text':button(k), 'href':v}) : "";
-  let result = Object.entries(items).map(([k,v]) => ifbutton(k,v)).join("")
-  console.log(result)
-  return result
-  // let result = "" ;
-  for (const [key, value] of Object.entries(items)) {
-    result += ifbutton(key, value)
-  }
-  return result;
+  const ifbutton = (k, v) => v ? a({ 'text': button(k), 'href': v }) : "";
+  return Object.entries(items)
+    .filter(([k, v]) => k !== "DOI") 
+    .map(([k, v]) => ifbutton(k, v))
+    .join("");
 }
 
 function em(item){
@@ -58,11 +54,31 @@ function div(item, c=null,s=null){
 
 function img(item){
     i = `<img id="${item}" src="img/${item}" alt="${item}">`
-    return div(i, "img-wrapper")
+    return `<span class="img-wrapper"> ${i} </span>` // div(i, "img-wrapper")
 }
-function button(item){
-    return `<button ${cls('btn')}> \n ${item} \n </button>`;
+
+function fa(cls) {
+    return `<i class="${cls}"></i>`
 }
+
+function tryfa(key) {
+  const icons = {
+    project: 'fa fa-bookmark',
+    PDF: 'far fa-file-text',
+    CODE: 'fa fa-code',
+    DEMO: 'fa fa-video-camera',
+    DATA: 'fa fa-database',
+  };
+
+  const icon = icons[key];
+  return icon ? fa(icon)+' ' : ''
+}
+
+function button(key){
+    // page buttons
+    return `<button ${cls('btn')}> \n ${tryfa(key)+key} \n </button>`;
+}
+
 function tagjoin(li){
     return li.join("\n")
 }
@@ -76,16 +92,15 @@ function pub2html(item){
 
     title = div(em(`${item["title"]}`));
     authors = get_authors(item["authors"]);
-    venue = item["venue"].join(" ");
+    venue = div(item["venue"].join(" "), "", "font-style: italic");
 
     // page buttons
-    external = div(get_pages(item['external']),"rflex")
-    sub = div(tagjoin([venue, external]),"mflex subcard")
+    external = div(get_pages(item['external']),"rflex") //  "justify-content: start"
 
     desc = item['desc'] ? p(item['desc']) : "" ;
 
     // combine
-    html = div(tagjoin([title, div(authors), sub, desc]));
+    html = div(tagjoin([title, div(authors), venue, external, desc]));
     html = [img(item["media"]),html].join("\n")
     html = div(html,"mflex card")
 
