@@ -22,9 +22,13 @@ function get_authors(items) {
 }
 
 function get_pages(items) {
-  let result = "" ;
+  ifbutton = (k,v) => v  ? a({'text':button(k), 'href':v}) : "";
+  let result = Object.entries(items).map(([k,v]) => ifbutton(k,v)).join("")
+  console.log(result)
+  return result
+  // let result = "" ;
   for (const [key, value] of Object.entries(items)) {
-    result += value ? a({'text':button(key), 'href':value}) : ""
+    result += ifbutton(key, value)
   }
   return result;
 }
@@ -112,12 +116,12 @@ function pub2html(item){
     `
 
     pubs.appendChild(template.content);
-    console.log(html);
+    // console.log(html);
 }
 
 function main(){
     loadText("pub.json").then((text) => {
-        console.log(text);
+        // console.log(text);
         pubs = JSON.parse(text)
 
         pubs.forEach(function(item) {
