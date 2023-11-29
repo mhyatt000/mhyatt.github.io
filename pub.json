@@ -154,7 +154,8 @@
     ],
     "external": {
       "PDF": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf",
-      "DOI": "https://dl.acm.org/doi/10.1145/3560835.3564547"
+      "DOI": "https://dl.acm.org/doi/10.1145/3560835.3564547",
+      "CODE": "https://github.com/Wenxin-Jiang/SCORED22-PTMSupplyChain"
     },
     "media": "scored.jpg"
   },

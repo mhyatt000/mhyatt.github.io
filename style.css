@@ -213,3 +213,10 @@ button a:hover { color: white; }
     filter: invert(27%) sepia(56%) saturate(449%) hue-rotate(29deg) brightness(93%) contrast(91%);
 }
 
+
+
+
+
+#project {
+    height: 100vh; /* 100% of viewport height */
+}
