@@ -33,7 +33,6 @@
       2024
     ],
     "external": {
-      "project": "https://mhyatt000.github.io/tmp",
       "PDF": "",
       "DOI": ""
     },
@@ -60,9 +59,9 @@
       2023
     ],
     "external": {
-      "project": "https://mhyatt000.github.io/tmp",
+      "project": "robust-attribution",
       "PDF": "",
-      "PDF": "https://mhyatt000.github.io/docs/robust-attribution.pdf",
+      "PDF": "docs/robust-attribution.pdf",
       "CODE": "https://github.com/mhyatt000/vision",
       "DOI": ""
     },
@@ -109,7 +108,6 @@
       2023
     ],
     "external": {
-      "project": "https://mhyatt000.github.io/tmp",
       "PDF": "https://arxiv.org/abs/2303.02552",
       "DOI": "https://doi.org/10.1109/ICSE48619.2023.00206"
     },
@@ -156,7 +154,6 @@
       2022
     ],
     "external": {
-      "project": "https://mhyatt000.github.io/tmp",
       "PDF": "https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf",
       "DOI": "https://dl.acm.org/doi/10.1145/3560835.3564547",
       "CODE": "https://github.com/Wenxin-Jiang/SCORED22-PTMSupplyChain"
@@ -228,7 +225,6 @@
       2022
     ],
     "external": {
-      "project": "https://mhyatt000.github.io/tmp",
       "PDF": "https://arxiv.org/abs/2207.11767",
       "DOI": "https://dl.acm.org/doi/10.1145/3551349.3559517",
       "DEMO": "https://www.youtube.com/watch?v=YigEHy3_JCo",

@@ -218,5 +218,5 @@ button a:hover { color: white; }
 
 
 #project {
-    height: 100vh; /* 100% of viewport height */
+    min-height: 100vh; /* 100% of viewport height */
 }
