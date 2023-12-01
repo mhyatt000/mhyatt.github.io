@@ -180,7 +180,7 @@ button {
     border-radius: 10px;
     border-width: 2px;
     padding: 5px;
-    margin: 0px 5;
+    margin: 5px;
 }
 button:hover { background: var(--color-accent2); }
 button a:hover { color: white; }
