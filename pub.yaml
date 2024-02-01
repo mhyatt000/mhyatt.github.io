@@ -14,9 +14,9 @@
     href: 
   venue: 
     - "**UNDER PREPARATION"
-    - COGSCI
     - 2024
   external:
+    project: "retexture"
     PDF: ""
     DOI: ""
   media: cogsci.gif
