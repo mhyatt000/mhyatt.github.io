@@ -35,8 +35,7 @@
     - 2023
   external:
     project: "robust-attribution"
-    PDF: ""
-    PDF: "docs/robust-attribution.pdf"
+    PDF: "https://ecommons.luc.edu/cs_facpubs/360/"
     CODE: "https://github.com/mhyatt000/vision"
     DOI: ""
   media: sciint.gif
