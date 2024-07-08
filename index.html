@@ -1,135 +1,251 @@
-<!DOCTYPE html5>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Matt Hyatt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matt Hyatt's Personal Website">
-    <meta name="author" content="Matt Hyatt">
-    <link rel="icon" href="img/favicon.png">
+    <title>Academic Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family:  sans-serif;
+            color: #333333;
+        }
+        nav a {
+            color: #A8A8A8;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: uppercase;
+        }
 
-    <!-- css -->
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"> 
-    </link>
-    <link rel="stylesheet" href="style.css">
-    </link>
-  </head>
+        .fa-scholar {
+            content: url('https://raw.githubusercontent.com/jpswalsh/academicons/master/svg/google-scholar.svg');
+            filter: invert(13%) sepia(10%) saturate(42%) hue-rotate(316deg) brightness(101%) contrast(83%);
+            margin: auto -4px -7px -4px ;
+            height: 1.1em;
+            width: auto;
+        }
+        .fa-scholar:hover { 
+            filter: invert(27%) sepia(56%) saturate(449%) hue-rotate(29deg) brightness(93%) contrast(91%);
+        }
+        a i:hover { color: #4b5320; }
 
-  <body >
+    </style>
+</head>
+<body class="bg-gray-100">
 
-    <nav>
-        <div>
-          <h2> <a href="/">MATTHEW HYATT </a> </h2>
-        </div>
-        <div class="rflex">
-          <h4> <a href="docs/matthewhyatt-cv.pdf">CV</a> </h4>
+    <!-- Navigation Bar -->
+    <!-- <nav style="background-color: #2d3213;" class="fixed top-0 left-0 w-full p-4 z-10"> -->
+    <nav style="background-color: #2d3213;" class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold uppercase text-gray-400 hover:text-gray-300">Matthew Hyatt</a>
+            <div>
+                <a href="#publications" class="px-4 uppercase text-gray-400 hover:text-gray-300">Publications</a>
+                <!-- <a href="#contact" class="px-4 uppercase text-gray-400 hover:text-gray-300">Contact</a> -->
+                <a href="docs/matthewhyatt-cv.pdf" class="px-4 uppercase text-gray-400 hover:text-gray-300">CV</a>
+            </div>
         </div>
     </nav>
 
-    <section>
-      <div id="intro">
+    <!-- Main Content -->
+    <div class="container mx-auto mt-10">
+        <!-- Profile Section -->
+        <section id="home" class="p-6 rounded flex justify-center items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
 
-        <img id="avatar" src="img/avatar23.jpg" alt="avatar">
-        <h1> Matthew Hyatt </h1>
-        <h2>
-          Research Assistant
-          <br> BS Computer Science 2024
-        </h2>
+                <div class="order-2 md:order-1">
+                    <h1 class="text-3xl font-bold">Matthew Hyatt</h1>
+                    <p class="text-gray-700 mt-2">
+                    I'm a PhD student at <a href="https://www.luc.edu/" class="text-green-600">Loyola University Chicago</a>, where I work on robot learning. 
+                    I am lucky to be advised by <a href="https://aisec.cs.luc.edu/abuhamad.html" class='text-green-600'>Mohammed Abuhamad</a> and affiliated with <a href='https://aisec.cs.luc.edu/' class='text-green-600'>AISEC</a> and the <a href="https://ssl.cs.luc.edu/" class="text-green-600">Software Systems Laboratory</a>. 
+                    <!-- </p> <p class="text-gray-700 mt-2"> 
+                    During my undergraduate studies, I worked with <a href="https://dualitylab.github.io/" class="text-green-600">Daniel Moreira</a> and
+                    <a href="https://gkt.cs.luc.edu/" class="text-green-600">George Thiruvathukal</a> 
+                    on deep learning techniques for forensic image analysis.
+                    -->
+                    </p>
+                    <p class="text-gray-700 mt-2">
+                    <strong>Research Interests:</strong>
+                    I am interested in self supervised methods for imitation learning, continual improvement, and learning from human behavior.
+                    While it is common to use these techniques to improve generalization in unseen environments, 
+                    I intend to improve the capability of robots to become increasingly capable in familiar environments.
+                    </p>
 
-        <div class="row" id="socials">
-          <a href="https://github.com/mhyatt000/" aria-label="Github">
-            <i class="fa-brands fa-3x fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/matt-hyatt-7bb18422a/" aria-label="LinkedIn">
-            <i class="fa-brands fa-3x fa-linkedin"></i>
-          </a>
-          <a href="https://orcid.org/0000-0002-6356-6832" aria-label="OrcId">
-            <i class="fa-brands fa-3x fa-orcid"></i>
-          </a>
-          <a href="https://scholar.google.com/citations?user=SXv-oqYAAAAJ&hl=en&oi=sra" aria-label="Scholar">
-            <i class="fa-brands fa-3x fa-scholar"></i>
-          </a>
-          <a href="mailto:mhyatt@luc.edu" aria-label="Email">
-              <i class="fa-solid fa-3x fa-envelope"></i>
-          </a>
-        </div>
-      </div>
+                <!-- Social Media Icons -->
+                <div id="socials" class="mt-10 flex justify-center space-x-4">
+                    <a href="https://github.com/mhyatt000/" aria-label="Github" class="text-gray-700 ">
+                        <i class="fab fa-3x fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/matt-hyatt-7bb18422a/" aria-label="LinkedIn" class="text-gray-700 ">
+                        <i class="fab fa-3x fa-linkedin"></i>
+                    </a>
+                    <a href="https://orcid.org/0000-0002-6356-6832" aria-label="OrcId" class="text-gray-700 ">
+                        <i class="fab fa-3x fa-orcid"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=SXv-oqYAAAAJ&hl=en&oi=sra" aria-label="Scholar" class="text-gray-700 ">
+                        <i class="fab fa-3x fa-scholar"></i>
+                    </a>
+                    <a href="mailto:mhyatt@luc.edu" aria-label="Email" class="text-gray-700 ">
+                        <i class="fas fa-3x fa-envelope"></i>
+                    </a>
+                </div>
 
-      <div>
-        I am an undergraduate at <a href="https://www.luc.edu/">Loyola University Chicago</a>, where I study computer science.  
-        I am co-advised by Professors <a href="https://gkt.cs.luc.edu/">George Thiruvathukal</a> and <a href="https://danielmoreira.github.io/"> Daniel Moriera </a> in Loyola's <a href="https://ssl.cs.luc.edu/">Software Systems Laboratory</a>
-        and have had the privilege of collaborating with Purdue University's <a href="https://davisjam.github.io/research">Duality Lab</a> for the past two years.
-      </div>
-    </section>
+            </div>
 
-    <section id="research" class="light">
-    <div class="flex">
-      <h3>Research</h3>
+            <div class="flex justify-center order-1 md:order-2">
+                    <img src="img/avatar23.jpg" alt="Your Avatar" class="w-64 h-64 rounded-full">
+                </div>
+            </div>
 
-      <!-- 
-      <p>
-        I am interested in the intersection between computer vision and deep reinforcement learning for robotics.
-        My work currently focuses on the detection of synthetic medical images from GANs and context-aware video action recognition. 
-      </p>
-      -->
+
+        </section>
+
+        <!-- Alert Section -->
+        <section id="alert" class="bg-green-100 p-6 rounded shadow-md mt-10">
+            <p class="text-l font-bold ">
+            I am interested in collaborating with other motivated students. 
+            Please reach out if you would like to work together. 
+            <!-- 
+                <a href="https://forms.office.com/pages/responsepage.aspx?id=408fApwrJEiDeLvPnsWsy35hLRhodEZIlXa58tKHst1UMzlJSUxVOVJMSFdRRENHVko1OElTQzZTMy4u" class="text-green-600">AISEC</a>
+            </p>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="bg-white p-6 rounded shadow-md mt-10">
+            <h2 class="text-2xl font-bold mb-4">News</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li> <p class='text-gray-700'>May 2024 - I'm excited to announce that I've been awarded the <strong><a href="https://ndseg.sysplus.com/NDSEG/Awardees/FY2024" class="text-green-600">DOD NDSEG</a></strong>! </p> </li>
+                <li> <p class='text-gray-700'>May 2024 - I've been awarded the <strong><a href="https://www.nsfgrfp.org/" class="text-green-600">NSF GRFP</a></strong>! </p> </li>
+                <!-- Add more as needed -->
+            </ul>
+        </section>
+
+
+        <!-- Publications Section -->
+        <section id="publications" class="bg-white p-6 rounded shadow-md mt-10">
+            <h2 class="text-2xl font-bold mb-4">Publications</h2>
+            <div class="space-y-6">
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <img src="img/cogsci.gif" alt="publication 1" class="w-48 h-48 object-fit rounded-md">
+                    <div>
+                        <h3 class="text-l font-bold">Towards Human-inspired Visual Perception Networks</h3>
+                        <p class="text-gray-700">Luke Baumel, <strong class='text-green-600'>Matt Hyatt</strong>, Mikayla Cutler, Joseph Tocco, George K. Thiruvathukal, Nicholas Baker</p>
+                        <!-- <p class="text-gray-700">venue, year</p> -->
+                        <p class="text-gray-700 mt-4"><strong>TLDR: </strong>We create a novel dataset of skinned 3d models to study differences in human and machine perception.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <img src="img/pub/placeholder.jpg" alt="publication 1" class="w-48 h-48 object-cover rounded-md">
+                    <div>
+                        <h3 class="text-l font-bold">Robust Source Attribution of Synthetically Generated Western Blot Images</h3>
+                        <p class="text-gray-700"><strong class='text-green-600'>Matt Hyatt</strong>, George K. Thiruvathukal, Daniel Moreira</p>
+                        <p class="text-gray-700">Loyola eCommons, 2023</p>
+                        <p class='mt-2'>
+                            <a href="robust-attribution" class="text-green-600">Project</a> / 
+                            <a href="https://ecommons.luc.edu/cs_facpubs/360/" class="text-green-600">PDF</a> / 
+                            <a href="https://github.com/mhyatt000/vision" class="text-green-600">Code</a>
+                        </p>
+                        <p class="text-gray-700 mt-4"><strong>TLDR: </strong>We use convolution layers in fourier space to improve the classification of western blot images synthesized via GAN/diffusion models.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <img src="img/icse.gif" alt="publication 1" class="w-48 h-48 object-cover rounded-md">
+                    <div>
+                        <h3 class="text-l font-bold">An Empirical Study of Pre-Trained Model Reuse in the Hugging Face Deep Learning Model Registry</h3>
+                        <p class="text-gray-700">Wenxin Jiang, Nicholas Synovic, <strong class='text-green-600'>Matt Hyatt</strong>, Taylor R. Schorlemmer, Rohan Sethi, Yung-Hsiang Lu, George K. Thiruvathukal, James C. Davis</p>
+                        <p class="text-gray-700">ICSE, 2023</p>
+                        <p class='mt-2'>
+                            <a href="https://arxiv.org/abs/2303.02552" class="text-green-600">PDF</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <img src="img/scored.jpg" alt="Publication 2" class="w-48 h-48 object-cover rounded-md">
+                    <div>
+                        <h3 class="text-l font-bold">An Empirical Study of Artifacts and Security Risks in the Pretrained Model Supply Chain</h3>
+                        <p class="text-gray-700">Wenxin Jiang, Nicholas Synovic, Rohan Sethi, Aryan Indarapu, <strong class='text-green-600'>Matt Hyatt</strong>, Taylor R. Schorlemmer, George K. Thiruvathukal, James C. Davis</p>
+                        <p class="text-gray-700">SCORED, 2022</p>
+                        <p class='mt-2'>
+                            <a href="https://davisjam.github.io/files/publications/JiangSynovicSethiIndarapuHyattSchorlemmerThiruvathukal-PTMSupplyChain-SCORED22.pdf" class="text-green-600">PDF</a> / 
+                            <a href="https://github.com/Wenxin-Jiang/SCORED22-PTMSupplyChain" class="text-green-600">Code</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <img src="img/prime.gif" alt="Publication 2" class="w-48 h-48 object-cover rounded-md">
+                    <div>
+                        <h3 class="text-l font-bold">Snapshot Metrics Are Not Enough: Analyzing Software Repositories with Longitudinal Metrics</h3>
+                        <p class="text-gray-700">Nicholas Synovic, <strong class='text-green-600'>Matt Hyatt</strong>, Rohan Sethi, Sohini Thota, Shilpika, Allan J. Miller, Wenxin Jiang, Emmanuel S. Amobi, Austin Pinderski, Konstantin Läufer, Nicholas J. Hayward, Neil Klingensmith, James C. Davis, George K. Thiruvathukal</p>
+                        <p class="text-gray-700">ASE Tools Demo, 2022</p>
+                        <p class='mt-2'>
+                            <a href="https://arxiv.org/abs/2207.11767" class="text-green-600">PDF</a> / 
+                            <a href="https://www.youtube.com/watch?v=YigEHy3_JCo" class="text-green-600">Video</a> / 
+                            <a href="https://github.com/SoftwareSystemsLaboratory/prime" class="text-green-600">Code</a> / 
+                            <a href="https://doi.org/10.5281/zenodo.6477789" class="text-green-600">Data</a>
+                        </p>
+                        <p class="text-gray-700 mt-4"><strong>TLDR:</strong> PRIME is a tool that provides a longitudinal analysis of software repositories to better understand the evolution of codebase over time.</p>
+                    </div>
+                </div>
+
+                <!-- Add more publications as needed -->
+            </div>
+        </section>
+
+
+        <!-- Research Experience Section -->
+        <section id="experience" class="bg-white p-6 rounded shadow-md mt-10">
+            <h2 class="text-2xl font-bold mb-4">Research Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-green-600">
+                <div class="flex flex-col items-center text-center">
+                    <a href="https://www.luc.edu/">
+                        <img src="img/experience/loyola2.png" alt="Loyola University" class="w-32 h-32 object-cover rounded-md">
+                    </a>
+                    <a href="https://www.luc.edu/">
+                        <p>Loyola University</p>
+                    </a>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <a href="https://davisjam.github.io/">
+                        <img src="img/experience/purdue.png" alt="Purdue University" class="w-32 h-32 object-cover rounded-md">
+                    </a>
+                    <a href="https://davisjam.github.io/">
+                        <p>Purdue University</p>
+                    </a>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <a href="https://www.anl.gov/cels">
+                        <img src="img/experience/anl.png" alt="Argonne National Laboratory" class="w-32 h-32 object-cover rounded-md">
+                    </a>
+                    <a href="https://www.anl.gov/cels">
+                        <p>Argonne National Laboratory</p>
+                    </a>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <a href="https://robin-lab.cs.utexas.edu/">
+                        <img src="img/experience/ut.png" alt="UT Austin" class="w-32 h-32 object-cover rounded-md">
+                    </a>
+                    <a href="https://robin-lab.cs.utexas.edu/">
+                        <p>UT Austin</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-6 rounded shadow-md mt-10">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <!-- 
+            <p class="text-gray-700">Email: <a href="mailto:your-email@example.com" class="text-green-600">your-email@example.com</a></p>
+            <p class="text-gray-700">Phone: <a href="tel:+1234567890" class="text-green-600">+1234567890</a></p>
+            -->
+        </section>
+
     </div>
-    <div id="pub">
-        
-    </div>
-    </section>
-
-    <section id="education">
-        <div>
-            <h3>Education</h3>
-
-            <div class="card mflex">
-                <h4>expected MAY 2024
-                    <i class="fa fa-1x fa-graduation-cap"></i>
-                </h4>
-                <h4>BS Computer Science</h4>
-                <p>Loyola University Chicago </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="experience">
-        <div>
-            <h3>Experience</h3>
-            
-        <div class="card cflex">
-            <div class="card mflex">
-                <h4>Loyola University
-                    <i class="fa fa-1x fa-university"></i>
-                </h4>
-                <p>Research Assistant</p>
-            </div>
-
-            <div class="card mflex">
-                <h4>Argonne National Laboratory </h4>
-                <p>Research Assistant</p>
-            </div>
-
-            <div class="card mflex">
-                <h4>Beam Suntory </h4>
-                <p>Data Science Intern | Global Production Planning</p>
-            </div>
-
-            <div class="card mflex">
-                <h4>Purdue University
-                    <i class="fa fa-1x fa-university"></i>
-                </h4>
-                <p>Research Assistant</p>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-
-
-    <footer> <div> </div> </footer> 
-    
-  </body>
-  <script src="fileio.js"></script>
+</body>
 </html>
