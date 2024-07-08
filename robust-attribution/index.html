@@ -1,74 +1,132 @@
-<!DOCTYPE html5>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Matt Hyatt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matt Hyatt's Personal Website">
-    <meta name="author" content="Matt Hyatt">
-    <link rel="icon" href="../img/favicon.png">
+    <title>Robust Attribution Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #333333;
+        }
+        nav a {
+            color: #A8A8A8;
+        }
+        nav a:hover {
+            color: #D1D1D1;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
 
-    <!-- css -->
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"> 
-    </link>
-    <link rel="stylesheet" href="../style.css">
-    </link>
-  </head>
-
-  <body>
-
-    <nav>
-        <div>
-          <h2> <a href="/">MATTHEW HYATT </a> </h2>
-        </div>
-        <div class="rflex">
-          <h4> <a href="docs/matthewhyatt-cv.pdf">CV</a> </h4>
+    <!-- Navigation Bar -->
+    <!-- <nav style="background-color: #2d3213;" class="fixed top-0 left-0 w-full p-4 z-10"> -->
+    <nav style="background-color: #2d3213;" class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold uppercase text-gray-400 hover:text-gray-300">Matthew Hyatt</a>
+            <div>
+                <a href="#publications" class="px-4 uppercase text-gray-400 hover:text-gray-300">Publications</a>
+                <!-- <a href="#contact" class="px-4 uppercase text-gray-400 hover:text-gray-300">Contact</a> -->
+                <a href="docs/matthewhyatt-cv.pdf" class="px-4 uppercase text-gray-400 hover:text-gray-300">CV</a>
+            </div>
         </div>
     </nav>
 
-    <section id="project">
-      <div class="cflex">
-          <h1>Robust Attribution of Synthetically Generated Western Blot Images</h1>
-          <p>Loyola University eCommons</p>
-          <h3>Matthew Hyatt, George K. Thiruvathukal, Daniel Moreira </h3>
-          <h3>Loyola University</h3>
+    <!-- Project Section -->
+    <section id="project" class="container mx-auto p-6 mt-10 bg-white rounded shadow-md">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold">Robust Attribution of Synthetically Generated Western Blot Images</h1>
+            <p class="text-lg mt-2">Matthew Hyatt, George K. Thiruvathukal, Daniel Moreira</p>
+            <p class="font-bold mt-2">Loyola University</p>
+        </div>
 
-        <div class="rflex"> 
-         <a href="robust-attribution"><button class="btn"> 
-         <i class="fa fa-bookmark"></i> project 
-         </button></a><a href="../docs/robust-attribution.pdf"><button class="btn"> 
-         <i class="far fa-file-text"></i> PDF 
-         </button></a><a href="https://github.com/mhyatt000/vision"><button class="btn"> 
-         <i class="fa fa-code"></i> CODE 
-         </button></a> 
-         </div>
+        <div class="text-center mb-6">
+            <p class='mt-2'>
+                <a href="robust-attribution" class="text-green-600">Project</a> / 
+                <a href="../docs/robust-attribution.pdf" class="text-green-600">PDF</a> / 
+                <a href="https://github.com/mhyatt000/vision" class="text-green-600">Code</a>
+            </p>
+        </div>
 
-         <div>
-         <img src="preview.png" alt="[paper]" style="max-width: 100%; max-height: 150;">
-         </div>
+        <div class="flex justify-center mb-6">
+            <img src="preview.png" alt="[paper]" class="max-w-full h-auto">
+        </div>
 
+        <div class="mb-6">
+            <h3 class="text-xl font-bold mb-4">Abstract</h3>
 
-          <h3>Abstract</h3>
             <p> 
             Retracted papers commonly include manipulations of images and figures that are unfit for publication.
-While some manipulations are benign, like increasing contrast or zooming in, others are designed
-to fool the intended audience. Recent improvements in generative computer vision pose a security
-risk to scientific review since generated images are often indistinguishable from authentic bioscience
-evidence; even to field experts. In this work, we improve upon previous attempts to detect synthetic
-images by attending to their differences in the frequency domain. Additionally, we solve the multiclass classification of synthetic Western blots and attribute Western blot images to their respective
-generative model architecture. We demonstrate that our method outperforms previous methods for
-synthetic Western blot detection; including efforts to classify JPEG compressed images
+            While some manipulations are benign, like increasing contrast or zooming in, others are designed
+            to fool the intended audience. Recent improvements in generative computer vision pose a security
+            risk to scientific review since generated images are often indistinguishable from authentic bioscience
+            evidence; even to field experts. In this work, we improve upon previous attempts to detect synthetic
+            images by attending to their differences in the frequency domain. Additionally, we solve the multiclass classification of synthetic Western blots and attribute Western blot images to their respective
+            generative model architecture. We demonstrate that our method outperforms previous methods for
+            synthetic Western blot detection; including efforts to classify JPEG compressed images
             </p>
 
-          <img src="../img/sciint/fig_method.jpg" alt="[METHOD]" style="max-width: 100%; max-height: 100%;">
-        <p> </p>
-          <img src="../img/sciint/sciint.png" alt="[MOTIVATION]" style="max-width: 100%; max-height: 100%;">
-          <p>UNDER CONSTRICTION... please come back later :)</p>
-      </div>
+        </div>
+
+        <div class="mb-6">
+            <h3 class="text-xl font-bold mb-4">Motivation</h3>
+
+            <p>
+            Figure 1 shows that the average western blot patch from Mandelli et al. and the average fourier spectra.
+            While there is often little difference between the average western blot patches, 
+            the average fourier spectra reveal that there are differences in high frequency pixel patterns.
+            </p>
+            <p class="mt-2">
+            Motivated by this observation, we propose a method to detect synthetic western blot images by
+            attending to their differences in the frequency domain. We demonstrate that our method outperforms
+            previous hand crafted and deep learning methods for synthetic western blot detection.
+            </p>
+
+            <div class="flex justify-center mt-2">
+                <img src="../img/sciint/sciint.png" alt="[MOTIVATION]" class="w-1/2 mx-auto max-w-full h-auto">
+            </div>
+        </div>
+
+
+        <div class="mb-6">
+            <h3 class="text-xl font-bold mb-4">Method</h3>
+
+            <div class="flex justify-center mb-6">
+                <img src="../img/sciint/fig_method.jpg" alt="[METHOD]" class="max-w-full h-auto">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- bibtex -->
+    <section id="citation" class="container mx-auto p-6 mt-10 rounded">
+        <h3 class="text-xl font-bold mb-2">Cite</h3>
+        <p class="text-lg mt-2"> Please use the following BibTeX entry to cite this work: </p>
+
+        <div id="tex" class="container mx-auto p-6 mt-2 bg-green-100 rounded shadow-md">
+            <pre class="text-l font-bold overflow-x-scroll"> @article{Hyatt2024, 
+    title = "{Robust Source Attribution of Synthetically Generated Western Blot Images}", 
+    author = "Matthew Hyatt and George K. Thiruvathukal and Daniel Moreira", 
+    year = "2024", 
+    url = "https://figshare.com/articles/journal_contribution/Robust_Source_Attribution_of_Synthetically_Generated_Western_Blot_Images/24954600", 
+    doi = "10.6084/m9.figshare.24954600.v1" 
+} </pre> 
+        </div>
+
     </section>
 
 
-    <footer> <div> </div> </footer> 
-    
-  </body>
+    <footer style="background-color: #2d3213;" class="bg-gray-800 p-2 mt-10">
+        <div class="container mx-auto text-center text-white">
+            &copy; 2024 Matthew Hyatt
+        </div>
+    </footer> 
+
+</body>
 </html>
